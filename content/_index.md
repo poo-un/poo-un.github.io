@@ -1,5 +1,4 @@
 ---
-title: Hextra Theme
 title: OOP Resource website
 toc: false
 ---
@@ -9,8 +8,7 @@ toc: false
 ## Explore
 
 {{< cards >}}
-  {{< card link="docs/languages/java" title="Java" icon="code" >}}
-  {{< card link="docs/languages/python" title="Python" icon="code" >}}
-  {{< card link="docs/languages/javscript" title="Javascript" icon="code" >}}
-  {{< card link="docs/languages/cpp" title="C++" icon="code" >}}
+  {{< card link="about" title="About course" icon="identification" >}}
+  {{< card link="docs" title="Documentation and contents" icon="document-text" >}}
+  {{< card link="practice" title="Practice" icon="puzzle" >}}
 {{< /cards >}}
