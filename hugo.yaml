@@ -14,21 +14,19 @@ outputs:
 
 menu:
   main:
-    - name: Start here
+    - name: About course
+      pageRef: /about
+      weight: 1
+    - name: Contents
       pageRef: /docs
       weight: 1
-    - name: Java
-      pageRef: /java
-      weight: 2
-    - name: Python
-      pageRef: /python
-      weight: 2
-    - name: Javascript
-      pageRef: /javascript
-      weight: 3
-    - name: C++
-      pageRef: /cpp
-      weight: 4  
+    - name: Practice
+      pageRef: /practice
+      weight: 1
+    - name: Search
+      weight: 4
+      params:
+        type: search
   
   
 
@@ -52,6 +50,7 @@ params:
     displayCopyright: false
     displayPoweredBy: true
 
+params:
   # Search
   search:
     enable: true
