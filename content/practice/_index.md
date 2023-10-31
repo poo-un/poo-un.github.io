@@ -8,10 +8,6 @@ Here you'll find practical exercises related to the course contents
 
 {{< cards >}}
   {{< card link="javascript-practice" title="Javascript exercises" icon="code" >}}
-  {{< card link="secondjs" title="Second exercise" icon="code" >}}
-  {{< card link="thirdjs" title="Third exercise" icon="code" >}}
-  {{< card link="fourthjs" title="Fourth exercise" icon="code" >}}
-  {{< card link="fifthjs" title="Fifth exercise" icon="code" >}}
-  {{< card link="sixthjs" title="Sixth exercise" icon="code" >}}
+  {{< card link="python-practice" title="Python exercises" icon="code" >}}
 
 {{< /cards >}}
