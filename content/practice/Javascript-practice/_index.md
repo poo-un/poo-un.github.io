@@ -1,13 +1,15 @@
 ---
-linkTitle: "Practice module"
-title: Practice module
+linkTitle: "Javascript practice module"
+title: Javascript practice
+cascade:
+  type: docs
 ---
 
-Here you'll find practical exercises related to the course contents
+Here you'll find all OOP-related exercises in Javascript.
 
 
 {{< cards >}}
-  {{< card link="javascript-practice" title="Javascript exercises" icon="code" >}}
+  {{< card link="firstjs" title="First exercise" icon="code" >}}
   {{< card link="secondjs" title="Second exercise" icon="code" >}}
   {{< card link="thirdjs" title="Third exercise" icon="code" >}}
   {{< card link="fourthjs" title="Fourth exercise" icon="code" >}}
@@ -15,3 +17,8 @@ Here you'll find practical exercises related to the course contents
   {{< card link="sixthjs" title="Sixth exercise" icon="code" >}}
 
 {{< /cards >}}
+
+
+
+
+

@@ -11,6 +11,11 @@ In this site, you will find essential resources to master the exciting world of 
 
 This documentation platform emerged from our commitment to enhancing the teaching and learning experience of our Object-Oriented Programming course. We wanted to explore new ways of delivering the course content by leveraging modern technology and platforms. Our goal is to make learning about object-oriented programming more accessible and engaging for everyone.
 
+**What are our objectives:**
+ - Create digital resources that support learning-teaching activities within the object-oriented programming courses at Universidad Nacional de Colombia.
+ - Encourage their own digital resources and integrate them with our work.
+ - Promote student-centered learning methods, including active learning, flipped classroom, and problem-based learning. 
+
 **What we offer:**
 
 - **Fundamental Concepts**: Learn the pillars of object-oriented programming, from classes and objects to encapsulation and inheritance.
