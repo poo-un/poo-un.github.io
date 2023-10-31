@@ -28,6 +28,6 @@ This documentation platform emerged from our commitment to enhancing the teachin
 We are here to assist you every step of the way!
 
 {{< cards >}}
-  {{< card link="/docs" title="Start here" icon="code" >}}
+  {{< card link="docs" title="Start here" icon="code" >}}
   {{< card link="/practice" title="Practice" icon="code" >}}
 {{< /cards >}}
