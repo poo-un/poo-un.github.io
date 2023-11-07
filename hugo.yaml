@@ -12,6 +12,16 @@ outputs:
   page: [HTML]
   section: [HTML, RSS]
 
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
 menu:
   main:
     - name: About course
@@ -27,6 +37,9 @@ menu:
       weight: 4
       params:
         type: search
+    - name: Tutorial
+      pageRef: /tutorial
+      weight: 2
   
   
 
@@ -35,23 +48,26 @@ menu:
       name: "Start here"
       pageRef: "/docs"
       weight: 1
-    - identifier: hugoDocs
-      name: "Hugo Docs ↗"
-      url: "https://gohugo.io/documentation/"
-      weight: 3
+
 
 
 params:
   navbar:
     displayTitle: true
     displayLogo: false
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+      # width: 40
+      # height: 20
+      # link: /
+    width: wide
 
   footer:
-    displayCopyright: false
+    enable: true
+    displayCopyright: true
     displayPoweredBy: false
 
-params:
-  # Search
   search:
     enable: true
     type: flexsearch
@@ -59,5 +75,6 @@ params:
     flexsearch:
       # index page by: content | summary | heading | title
       index: content
+  
 
 
