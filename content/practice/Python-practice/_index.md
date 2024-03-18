@@ -5,7 +5,7 @@ cascade:
   type: docs
 ---
 
-Here you'll find all OOP-related exercises in Javascript.
+Here you'll find all OOP-related exercises in Python.
 
 
 {{< cards >}}

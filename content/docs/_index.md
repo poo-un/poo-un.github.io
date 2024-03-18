@@ -1,13 +1,13 @@
 ---
 linkTitle: "Introduction"
-title: "Introduction to Object-Oriented Programming"  
-weight: 2
+title: "Introduction to Object-Oriented Programming"
+cascade:
+  type: docs
 ---
-
 ___
 
 {{< callout type="info" >}}
-  In this course, you’ll learn the fundamental skills of object-oriented programming for problem-solving. Select the language and the approach that best suit your interests and follow the course path.
+  In this course, you’ll learn the fundamental skills of object-oriented programming for problem-solving.
 {{< /callout >}}
 
 ___
@@ -18,49 +18,24 @@ Object-Oriented Programming (OOP) is a programming model that arranges software 
 
 OOP focuses on the objects that developers want to manipulate, rather than the logic required to manipulate them. This approach is particularly useful for large, complex programs that require constant updates or maintenance. Areas of application include manufacturing and design programs, as well as mobile applications. For example, OOP can be applied to develop manufacturing system simulation software.
 
-## What is the structure of object-oriented programming?
 
-The structure, or building blocks, of object-oriented programming include the following:
+## Why is Object-Oriented Programming important?
 
-## [Classes](poo-concepts/basic-concepts/class.md)
+Object-Oriented Programming (OOP) is important for several reasons:
 
-Classes are user-defined data types that act as the blueprint for individual objects, attributes, and methods. 
+1. **Real-world modeling**: OOP provides a programming model that reflects how we think about the real world. Objects and classes in OOP can represent real-world entities and concepts naturally, making it easier to understand the code and its relationship to the problem it is solving.
 
----
+2. **Encapsulation and information hiding**: OOP allows data and functions to be encapsulated within objects, meaning that the internal implementation of an object can be hidden from the outside. This promotes modularity and reduces complexity by providing a clear and consistent interface for interacting with objects.
 
-## [Objects](poo-concepts/basic-concepts/object.md)
+3. **Facilitates collaboration**: OOP facilitates collaboration among development teams by providing a clear and consistent structure for software design and implementation. Well-defined objects and clear interface contracts allow teams to work independently on different parts of the code.
 
-Objects are instances of a class created with specifically defined data. Objects can correspond to real-world objects or an abstract entity. When a class is initially defined, the description is the only object that is defined.
+4. **Facilitates code maintenance**: OOP makes it easier to make changes to the code, as objects and classes are designed to be modular and cohesive. This makes it easier to add new features, fix bugs, and perform updates to existing software.
 
----
+5. **Scalability**: OOP provides a scalable approach to software development, making it easier to manage and extend large and complex projects. It allows for the creation of modular components that can be developed and tested independently.
 
-## [Methods](poo-concepts/basic-concepts/methods.md)
-
-Methods are functions that are defined inside a class to describe the behaviors of an object. Each method contained in class definitions starts with a reference to an instance object. Additionally, the subroutines contained in an object are called instance methods. Programmers use methods for reusability or keeping functionality encapsulated inside one object at a time.
-
----
-
-## [Attributes](POO-concepts/basic-concepts/attributes.md)
-
-Attributes are defined in the class template and represent the state of an object. Objects will have data stored in the attributes field. Class attributes belong to the class itself.
-
-___
-
-{{< callout type="info" >}}
-  Below you’ll learn the main principles of object-oriented programming for problem-solving.
-{{< /callout >}}
-
-___
-
-Choose the principle of your interest from the buttons below:
+Overall, OOP enhances code organization, promotes code reusability, improves code reliability, and simplifies software development. It is widely used in various domains, including software engineering, game development, web development, and more.
 
 {{< cards >}}
-  {{< card link="poo-concepts/principles/encapsulation" title="Encapsulation" icon="code" >}}
-  {{< card link="poo-concepts/principles/abstraction" title="Abstraction" icon="code" >}}
-  {{< card link="poo-concepts/principles/inheritance" title="Inheritance" icon="code" >}}
-  {{< card link="poo-concepts/principles/polymorphism" title="Polymorphism" icon="code" >}}
+  {{< card link="main-principles" title="Main Principles" icon="code" >}}
+  {{< card link="basic-concepts" title="Basic Concepts" icon="code" >}}
 {{< /cards >}}
-
-
-
-

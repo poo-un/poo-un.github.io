@@ -1,5 +1,5 @@
 ---
 linkTitle: "Encapsulation"
 title: Encapsulation concept
-weight: 4
+weight: 1
 ---

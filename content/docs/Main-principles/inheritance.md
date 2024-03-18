@@ -1,5 +1,5 @@
 ---
 linkTitle: "Inheritance"
 title: Inheritance concept
-weight: 5
+weight: 2
 ---
