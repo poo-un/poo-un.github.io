@@ -1,5 +1,5 @@
 ---
-title: OOP Resource website
+title: OOP Resource website sui
 toc: false
 ---
 
@@ -8,8 +8,8 @@ toc: false
 ## Explore
 
 {{< cards >}}
-  {{< card link="about" title="About course" icon="identification" >}}
-  {{< card link="docs" title="Documentation and contents" icon="document-text" >}}
+  {{< card link="docs" title="Concepts" icon="document-text" >}}
   {{< card link="practice" title="Practice" icon="puzzle" >}}
   {{< card link="tutorial" title="Tutorial" icon="question-mark-circle" >}}
+  {{< card link="about" title="About course" icon="identification" >}}
 {{< /cards >}}

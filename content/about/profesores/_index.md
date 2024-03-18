@@ -8,3 +8,4 @@ title: Teachers
 
 **Jean Pierre Charalambos, PhD**
 - **Associate-professor**: Systems and Industrial Engineering Department | Engineering Faculty | Universidad Nacional de Colombia
+
