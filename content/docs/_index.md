@@ -36,6 +36,6 @@ Object-Oriented Programming (OOP) is important for several reasons:
 Overall, OOP enhances code organization, promotes code reusability, improves code reliability, and simplifies software development. It is widely used in various domains, including software engineering, game development, web development, and more.
 
 {{< cards >}}
-  {{< card link="main-principles" title="Main Principles" icon="code" >}}
   {{< card link="basic-concepts" title="Basic Concepts" icon="code" >}}
-{{< /cards >}}
+  {{< card link="main-principles" title="Main Principles" icon="code" >}}
+{{< /cards >}}  

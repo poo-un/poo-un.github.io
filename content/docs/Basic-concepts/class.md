@@ -1,42 +1,40 @@
 ---
-linkTitle: "Class"
+linkTitle: "Classes"
 title: Class concept
 weight: 1
 ---
 
 A class is a user-defined data type. It consists of data members and member functions, which can be accessed and used by creating an instance of that class. It represents the set of properties or methods that are common to all objects of one type. A class is like a blueprint for an object. \
-Imagine we have a Class called "GameCharacter." Within the vast world of gaming, there can be a multitude of different characters, each with unique names, appearances, and abilities.\
-However, despite their individuality, they often share certain common characteristics and behaviors that define what it means to be a "GameCharacter."In this scenario, "GameCharacter" is the Class, and the shared attributes and behaviors are its properties. These properties could include fundamental aspects such as "Health Points," "Attack Power," "Movement Speed," and "Special Abilities." \
-Regardless of whether a GameCharacter is a heroic knight, a cunning rogue, or a powerful wizard, they all possess these core properties
+Imagine we have a <font color="#007bff">Class</font> called <font color="#007bff">`GameCharacter`</font>. Within the vast world of gaming, there can be a multitude of different characters, each with unique names, appearances, and abilities.\
+However, despite their individuality, they often share certain common characteristics and behaviors that define what it means to be a <font color="#007bff">`GameCharacter`</font>. In this scenario, <font color="#007bff">`GameCharacter`</font> is the <font color="#007bff">Class</font>, and the shared <font color="#FFA600">attributes</font> and behaviors are its properties. These properties could include fundamental aspects such as <font color="#FFA600">`Health Points`</font>, <font color="#FFA600">`Attack Power`</font>, <font color="#FFA600">`Movement Speed`</font>, and <font color="#FFA600">`Special Abilities`</font>. \
+Regardless of whether a <font color="#007bff">`GameCharacter`</font> is a heroic knight, a cunning rogue, or a powerful wizard, they all possess these core properties
 
+Methods such as <font color="#FF75A0">`attack()`</font>, <font color="#FF75A0">`defend()`</font>, and <font color="#FF75A0">`move()`</font> allow <font color="#007bff">`GameCharacters`</font> to interact dynamically with the game world, performing offensive, defensive, and movement actions respectively.
 
-
-|ㅤㅤㅤㅤㅤGameCharacterㅤㅤㅤㅤㅤ |
+|ㅤㅤㅤㅤㅤ<font color="#007bff">GameCharacter</font>ㅤㅤㅤㅤㅤ|
 |:--:|
-|int  healthPoints <br/> int attackPower <br/> int movementSpeed  |
-| + attack( ) <br/> +defend( ) <br/> +move( ) |
+|<font color="#FFA600">int</font> healthPoints <br/> <font color="#FFA600">int</font> attackPower <br/> <font color="#FFA600">int</font> movementSpeed|
+| + <font color="#FF75A0">attack</font>( ) <br/> + <font color="#FF75A0">defend</font>( ) <br/> + <font color="#FF75A0">move</font>( )|
 
-### Example: Bank Account Class
+
+Let's explain this concept with an example:
+
+## Bank Account Class
 
 Let's consider the concept of a class using the example of a `BankAccount`.
 
-#### Class Concept:
-
-A class is like a blueprint or template for creating objects. In our example, the `BankAccount` class represents the blueprint for creating individual bank account objects.
+A <font color="#007bff">class</font> is like a blueprint or template for creating objects. In our example, the <font color="#007bff">`BankAccount`</font> class represents the blueprint for creating individual bank account objects.
 
 - **Attributes**:
-  - Attributes are characteristics or properties that describe the objects created from the class. For instance, in the case of a bank account, attributes could include `account_number`, `balance`, and `account_holder`.
+  - <font color="#FFA600">Attributes</font> are characteristics or properties that describe the objects created from the class. For instance, in the case of a <font color="#007bff">`BankAccount`</font>, attributes could include <font color="#FFA600">`account_number`</font>, <font color="#FFA600">`balance`</font>, and <font color="#FFA600">`account_holder`</font>.
 
 - **Methods**:
-  - Methods are functions that define the behavior of the objects created from the class. In the context of a bank account, methods could include operations like `deposit` and `withdraw`, which specify how money can be added to or withdrawn from an account.
+  - <font color="#F2613F">Methods</font> are functions that define the behavior of the objects created from the class. In the context of a <font color="#007bff">`BankAccount`</font>, methods could include operations like <font color="#F2613F">`deposit`</font> and <font color="#F2613F">`withdraw`</font>, which specify how money can be added to or withdrawn from an account.
 
-### Bank Account Class:
+|ㅤㅤㅤㅤㅤ<font color="#007bff">BankAccount</font>ㅤㅤㅤㅤㅤ|
+|:--:|
+| <font color="#FFA600">int</font> account_number <br/> <font color="#FFA600">int</font> balance <br/> <font color="#FFA600">string</font> account_holder |
+| + <font color="#F2613F">deposit</font>(amount) <br/> + <font color="#F2613F">withdraw</font>(amount) |
 
-Imagine we have a `BankAccount` class. This class doesn't represent a specific bank account; rather, it outlines what attributes and methods bank account objects will have.
 
-For instance, the `BankAccount` class may have:
-- Attributes such as `account_number`, `balance`, and `account_holder`.
-- Methods such as `deposit` and `withdraw` to perform actions on a bank account.
-
-This class acts as a blueprint for creating individual bank account objects. Each bank account object created from this class will have its own unique set of attributes (e.g., account number, balance) and can perform operations defined by the methods (e.g., depositing or withdrawing money).
-
+This <font color="#007bff">class</font> blueprint, highlighted in <font color="#007bff">blue</font>, defines the structure for creating <font color="#007bff">`BankAccount`</font> objects. Each object instantiated from this class inherits <font color="#FFA600">attributes</font> styled in <font color="#FFA600">yellow</font>, such as <font color="#FFA600">`account number`</font>, <font color="#FFA600">`balance`</font>, and <font color="#FFA600">`account holder`</font>. Additionally, the <font color="#F2613F">methods</font> highlighted in <font color="#F2613F">red</font>, such as <font color="#F2613F">`deposit()`</font> and <font color="#F2613F">`withdraw()`</font>, enable the objects to perform operations like adding or withdrawing money. 
