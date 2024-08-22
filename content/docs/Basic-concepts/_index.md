@@ -1,34 +1,29 @@
 ---
 linkTitle: "Basic Concepts"
-title: Basic Concepts of OOP
+title: Basic Concepts
 cascade:
   type: docs
 weight: 1
 ---
 
+___
+
+{{< callout type="info" >}}
+Object-Oriented Programming (OOP) relies on fundamental concepts that are essential for building and managing software systems.
+{{< /callout >}}
+
+___
+
+Object-Oriented Programming (OOP) is built upon a foundation of core concepts that shape how software is designed, structured, and implemented. These fundamental ideas are essential for creating robust, maintainable, and scalable applications.
+
+When learning OOP, it’s crucial to have a strong understanding of the basic concepts that drive this programming paradigm. These include objects, classes, attributes, methods, and more. Each of these concepts plays a unique role in organizing and managing code effectively.
+
+To guide your learning journey, we’ll use a common example: a <font color="#007bff">`Bank Account`</font>. This example will help illustrate how these basic concepts come together to create a functional and cohesive system.
 
 
-## Structure of OOP
+### Ready to learn more?
 
-The structure, or building blocks, of object-oriented programming include the following:
+Now that you've been introduced to the foundational ideas of OOP, it’s time to dive deeper into each concept. Mastering these basics will set the stage for building powerful applications that follow best practices in software design. Let's start with a core concept, <font color="#007bff">`Classes`</font>.
 
 
-### Classes
----
-A class is a fundamental concept in object-oriented programming (OOP). It serves as a blueprint or template for creating objects, which are instances of the class. A class defines the properties (attributes) and behaviors (methods) that objects of that class will have.
- 
-### Objects
-
----
-Objects are instances of a class created with specifically defined data. They represent real-world objects or abstract entities. When a class is initially defined, the description is the only object that is defined. Objects have their own state and behavior.
-
-### Methods
-
----
-Methods are functions that are defined inside a class to describe the behaviors of an object. Each method contained in class definitions starts with a reference to an instance object. Methods allow objects to perform actions and interact with other objects. They provide the functionality and behavior of objects.
-
-### Attributes
-
----
-Attributes are defined in the class template and represent the state of an object. Objects have data stored in the attributes field. Class attributes belong to the class itself and are shared by all instances of the class. Attributes define the properties and characteristics of objects.
 

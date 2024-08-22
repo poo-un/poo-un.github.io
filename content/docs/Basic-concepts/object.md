@@ -4,9 +4,10 @@ title: Object concept
 weight: 2
 ---
 
-In object-oriented programming (OOP), an <font color="#0047ab">object</font> is an instance of a <font color="#007bff">class</font>. It represents a real-world entity with its own set of properties (<font color="#FFA600">attributes</font>) and behaviors (<font color="#F2613F">methods</font>). <font color="#0047ab">Objects</font> are the building blocks of OOP and are used to model and interact with the system.
+{{< callout type="info" >}}
 
-### Example: Bank Account Class
+In object-oriented programming (OOP), an <font color="#0047ab">object</font> is an instance of a <font color="#007bff">class</font>. It represents a real-world entity with its own set of properties attributes and behaviors methods. <font color="#0047ab">Objects</font> are the building blocks of OOP and are used to model and interact with the system.
+{{< /callout >}}
 
 Remember that we have a class called <font color="#007bff">`BankAccount`</font>. This class represents a bank account, and it has <font color="#F2613F">methods</font> to perform banking operations like depositing money and withdrawing money.
 
@@ -25,8 +26,8 @@ Suppose we create two bank account <font color="#0047ab">objects</font> from the
 | ㅤㅤㅤㅤㅤ<font color="#007bff">Account 1</font>ㅤㅤㅤㅤㅤ | ㅤㅤㅤㅤㅤ<font color="#007bff">Account 2</font>ㅤㅤㅤㅤㅤ |
 |:--:|:--:|
 | <font color="#FFA600">account_number</font>: 123456 <br/> <font color="#FFA600">balance</font>: $500 <br/> <font color="#FFA600">account_holder</font>: John Doe | <font color="#FFA600">account_number</font>: 789012 <br/> <font color="#FFA600">balance</font>: $1000 <br/> <font color="#FFA600">account_holder</font>: Jane Smith |
-| +<font color="#FF75A0">deposit</font>(amount) <br/> +<font color="#FF75A0">withdraw</font>(amount) | +<font color="#FF75A0">deposit</font>(amount) <br/> +<font color="#FF75A0">withdraw</font>(amount) |
+| <font color="#FF75A0">+deposit</font> (amount) <br/> <font color="#FF75A0">+withdraw</font> (amount) | <font color="#FF75A0">+deposit</font> (amount) <br/> <font color="#FF75A0">+withdraw</font> (amount) |
 
 
-Each bank account <font color="#0047ab">object</font> represents a distinct bank account with its own unique <font color="#FFA600">attributes</font> and behaviors. For example, <font color="#007bff">`Account 1`</font> and <font color="#007bff">`Account 2`</font> have different <font color="#007bff">`account numbers`</font>, <font color="#007bff">`balances`</font>, and <font color="#007bff">`account olders`</font>. They can each independently use the <font color="#F2613F">`deposit`</font> and <font color="#F2613F">`withdraw`</font> methods to manage their funds.
+Each bank account <font color="#0047ab">object</font> represents a distinct bank account with its own unique attributes and behaviors. For example, <font color="#007bff">`Account 1`</font> and <font color="#007bff">`Account 2`</font> have different <font color="#FFA600">`account numbers`</font>, <font color="#FFA600">`balances`</font>, and <font color="#FFA600">`account olders`</font>. They can each independently use the <font color="#F2613F">`deposit`</font> and <font color="#F2613F">`withdraw`</font> methods to manage their funds.
 

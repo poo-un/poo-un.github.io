@@ -1,0 +1,70 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Object-oriented programming course - UN – Practice module</title>
+    <link>http://localhost:1313/methodologies/</link>
+    <description>Recent content in Practice module on Object-oriented programming course - UN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	  <atom:link href="http://localhost:1313/methodologies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>C&#43;&#43; contents 2</title>
+      <link>http://localhost:1313/methodologies/languages/cpp/more-contents/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/methodologies/languages/cpp/more-contents/second/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Java contents 2</title>
+      <link>http://localhost:1313/methodologies/languages/java/more-contents/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/methodologies/languages/java/more-contents/second/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Javascript contents 2</title>
+      <link>http://localhost:1313/methodologies/languages/javascript/more-contents/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/methodologies/languages/javascript/more-contents/second/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Python contents 2</title>
+      <link>http://localhost:1313/methodologies/languages/python/more-contents/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/methodologies/languages/python/more-contents/second/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

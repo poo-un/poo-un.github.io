@@ -9,7 +9,7 @@ toc: false
 
 {{< cards >}}
   {{< card link="docs" title="Concepts" icon="document-text" >}}
-  {{< card link="practice" title="Practice" icon="puzzle" >}}
+  {{< card link="methodologies" title="Methodologies" icon="puzzle" >}}
   {{< card link="tutorial" title="Tutorial" icon="question-mark-circle" >}}
   {{< card link="about" title="About course" icon="identification" >}}
 {{< /cards >}}
