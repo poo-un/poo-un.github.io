@@ -1,39 +1,36 @@
 ---
 linkTitle: "Methods"
-title: "Methods concept"
+title: Methods Concept
 weight: 4
 ---
 
-### Methods in Object-Oriented Programming
+{{< callout type="info" >}}
 
-Methods are an essential part of object-oriented programming (OOP). They are functions that are associated with a specific class or object and are used to perform actions or provide behavior for that class or object.
+In object-oriented programming, <font color="#F2613F">methods</font> define the actions that an object can perform. They are functions within a class that describe the behaviors or operations of the objects created from the class.
+{{< /callout >}}
 
-### Example: Bank Account Class
+Methods are integral to how objects interact with each other and perform tasks. Let’s explore this concept using the <font color="#007bff">`BankAccount`</font> class example:
 
-Let's say we have a class called `BankAccount`. This class represents a bank account, and it has methods to perform banking operations like depositing money and withdrawing money.
+| ㅤㅤㅤㅤㅤ<font color="#007bff">BankAccount</font>ㅤㅤㅤㅤㅤ |
+|:--:|
+| <font color="#F2613F">+deposit</font> (amount) <br/> <font color="#F2613F">+withdraw</font> (amount) |
 
-#### Depositing Money:
+#### Methods in Action:
 
-- **Method Name:** `deposit`
-- **What it does:** Adds money to the bank account.
-- **For Example:** If you want to put $100 into your bank account, you would use the `deposit` method.
+For instance, let's use the <font color="#007bff">`BankAccount`</font> class to create two bank account objects:
 
-#### Withdrawing Money:
+| ㅤㅤㅤㅤㅤ<font color="#007bff">Account 1</font>ㅤㅤㅤㅤㅤ | ㅤㅤㅤㅤㅤ<font color="#007bff">Account 2</font>ㅤㅤㅤㅤㅤ |
+|:--:|:--:|
+| <font color="#FFA600">account_number</font>: 123456 <br/> <font color="#FFA600">balance</font>: $500 <br/> <font color="#FFA600">account_holder</font>: John Doe | <font color="#FFA600">account_number</font>: 789012 <br/> <font color="#FFA600">balance</font>: $1000 <br/> <font color="#FFA600">account_holder</font>: Jane Smith |
+| <font color="#F2613F">+deposit</font> (amount) <br/> <font color="#F2613F">+withdraw</font> (amount) | <font color="#F2613F">+deposit</font> (amount) <br/> <font color="#F2613F">+withdraw</font> (amount) |
 
-- **Method Name:** `withdraw`
-- **What it does:** Takes money out of the bank account, but only if there's enough money in the account.
-- **For Example:** If you want to take out $50 from your bank account, you would use the `withdraw` method. But if you only have $30 in your account, you can't withdraw $50 because you don't have enough money.
+#### Example of Method Usage:
 
-### Bank Account Operations
+- <font color="#007bff">`Account 1`</font> can use the <font color="#F2613F">`deposit`</font> method to add funds and the <font color="#F2613F">`withdraw`</font> method to withdraw funds.
+- <font color="#007bff">`Account 2`</font> has the same methods but can perform <font color="#F2613F">`deposit`</font> and <font color="#F2613F">`withdraw`</font> operations based on its own balance and account details.
 
-Let's walk through some simple operations you can do with your bank account:
+Each object has access to the same <font color="#F2613F">methods</font> defined in the class, which enables them to perform similar actions, but the outcomes of these methods depend on the object's specific attributes and current state.
 
-#### Depositing Funds:
-
-- You get your paycheck and want to put $500 into your bank account. You'd use the `deposit` method to add $500 to your account balance.
-
-#### Withdrawing Funds:
-
-- You need to pay your monthly bills, so you withdraw $200 from your bank account. You'd use the `withdraw` method to take out $200 from your account balance. But if you try to withdraw $500 when you only have $300 in your account, you can't do it because you don't have enough money.
-
-
+{{< callout type="danger" >}}
+Explore the **Main Principles** chapter to learn more about how methods integrate with the core principles of OOP, including inheritance, polymorphism, abstraction, and encapsulation.
+{{< /callout >}}
