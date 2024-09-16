@@ -1,5 +1,5 @@
 ---
 linkTitle: "Abstraction"
 title: Abstraction concept
-weight: 4
+weight: 2
 ---

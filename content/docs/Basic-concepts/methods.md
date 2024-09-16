@@ -15,7 +15,7 @@ Methods are integral to how objects interact with each other and perform tasks. 
 |:--:|
 | <font color="#F2613F">deposit</font>(amount) <br/> <font color="#F2613F">withdraw</font>(amount) |
 
-#### Example:
+#### Bank Account Example:
 
 For instance, let's use the <font color="#007bff">`BankAccount`</font> class to create two bank account objects:
 
@@ -32,5 +32,5 @@ For instance, let's use the <font color="#007bff">`BankAccount`</font> class to 
 Each object has access to the same <font color="#F2613F">methods</font> defined in the class, which enables them to perform similar actions, but the outcomes of these methods depend on the object's specific attributes and current state.
 
 {{< callout type="danger" >}}
-Explore the **Basic Principles** chapter to learn more about how methods integrate with the core principles of OOP, including inheritance, polymorphism, abstraction, and encapsulation.
+Explore the **Core Principles** chapter to learn more about how methods integrate with the core principles of OOP, including inheritance, polymorphism, abstraction, and encapsulation.
 {{< /callout >}}

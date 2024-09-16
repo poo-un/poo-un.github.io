@@ -16,6 +16,14 @@ A <font color="#007bff">class</font> is like a blueprint or template for creatin
 
 
 ``` mermaid
+classDiagram
+    class BankAccount {
+    Int    accountNumber
+    Int    Balance 
+    String accountHolder
+    deposit(amount)
+    withdraw(amount)
+    } 
 ```
 <div style="display: flex; justify-content: center;">
     <div class="mermaid">
@@ -43,4 +51,4 @@ A <font color="#007bff">class</font> is like a blueprint or template for creatin
 - <font color="#F2613F">Methods</font> are functions that define the behavior of the objects created from the class. In the context of a <font color="#007bff">`BankAccount`</font>, methods could include operations like <font color="#F2613F">`deposit`</font> and <font color="#F2613F">`withdraw`</font>, which specify how money can be added to or withdrawn from an account.
 
 
-This class blueprint defines the structure for creating <font color="#007bff">`BankAccount`</font> objects. Each object instantiated from this class inherits <font color="#FFA600">attributes</font> such as <font color="#FFA600">`account number`</font>, <font color="#FFA600">`balance`</font> and <font color="#FFA600">`account holder`</font>. Additionally, the <font color="#F2613F">methods</font> such as <font color="#F2613F">`deposit()`</font> and <font color="#F2613F">`withdraw()`</font>, enable the objects to perform operations like adding or withdrawing money.
+This class blueprint defines the structure for creating <font color="#007bff">`BankAccount`</font> objects. Each object instantiated from this class inherits <font color="#FFA600">attributes</font> such as <font color="#FFA600">`accountNumber`</font>, <font color="#FFA600">`balance`</font> and <font color="#FFA600">`accountHolder`</font>. Additionally, the <font color="#F2613F">methods</font> such as <font color="#F2613F">`deposit()`</font> and <font color="#F2613F">`withdraw()`</font>, enable the objects to perform operations like adding or withdrawing money.

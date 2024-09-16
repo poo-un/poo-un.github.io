@@ -12,7 +12,7 @@ In object-oriented programming (OOP), an <font color="#FFA600">attribute</font> 
 
 Let's delve into the concept of attributes considering the <font color="#007bff">`BankAccount`</font> class. Each bank account object created from this class will have its own set of attributes:
 
-#### Example
+#### Bank Account Example:
 
 Consider the <font color="#007bff">`BankAccount`</font> class. Each bank account object created from this class will have its own set of attributes:
 
