@@ -6,7 +6,7 @@ cascade:
 weight: 2
 ---
 
-## Main principles of Object-Oriented Programming (OOP):
+## Basic principles of Object-Oriented Programming (OOP):
 
 1. **Encapsulation**: Encapsulation is the process of hiding the internal details of an object and exposing only the necessary information or functionality. It helps in achieving data abstraction and provides better control over the data.
 

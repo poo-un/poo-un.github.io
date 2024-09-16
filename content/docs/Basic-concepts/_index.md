@@ -25,5 +25,10 @@ To guide your learning journey, we’ll use a common example: a <font color="#00
 
 Now that you've been introduced to the foundational ideas of OOP, it’s time to dive deeper into each concept. Mastering these basics will set the stage for building powerful applications that follow best practices in software design. Let's start with a core concept, <font color="#007bff">`Classes`</font>.
 
-
+{{< cards >}}
+  {{< card link="class" title="Class" icon="code" >}}
+  {{< card link="object" title="Object" icon="code" >}}
+  {{< card link="attributes" title="Attributes" icon="code" >}}
+  {{< card link="methods" title="Methods" icon="code" >}}
+{{< /cards >}}
 

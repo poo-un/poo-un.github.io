@@ -35,10 +35,10 @@ Object-Oriented Programming (OOP) is important for several reasons:
 
 Overall, OOP enhances code organization, promotes code reusability, improves code reliability, and simplifies software development. It is widely used in various domains, including software engineering, game development, web development, and more.
 ___
-To truly harness the power of OOP, it's essential to understand its foundational principles. We invite you to begin your journey by exploring the basic concepts and main principles of OOP:
+To truly harness the power of OOP, it's essential to understand its foundational principles. We invite you to begin your journey by exploring the basic concepts and basic principles of OOP:
 
 
 {{< cards >}}
   {{< card link="basic-concepts" title="Basic Concepts" icon="code" >}}
-  {{< card link="main-principles" title="Main Principles" icon="code" >}}
+  {{< card link="basic-principles" title="Basic Principles" icon="code" >}}
 {{< /cards >}}

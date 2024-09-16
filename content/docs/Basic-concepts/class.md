@@ -15,14 +15,29 @@ Let's consider the concept of a class using the example of a <font color="#007bf
 A <font color="#007bff">class</font> is like a blueprint or template for creating objects. In our example, the <font color="#007bff">`BankAccount`</font> class represents the blueprint for creating individual bank account objects.
 
 
+``` mermaid
+```
+<div style="display: flex; justify-content: center;">
+    <div class="mermaid">
+    classDiagram
+    class BankAccount {
+    Int    accountNumber
+    Int    Balance 
+    String accountHolder
+    deposit(amount)
+    withdraw(amount)
+    } 
+    </div>
+</div>
+
 |ㅤㅤㅤㅤㅤ<font color="#007bff">BankAccount</font>ㅤㅤㅤㅤㅤ|
 |:--:|
-| <font color="#FFA600">account_number </font>: Int <br/> <font color="#FFA600">balance </font>: Int<br/> <font color="#FFA600">account_holder </font> : String |
-| <font color="#F2613F">+deposit</font> (amount) <br/> <font color="#F2613F">+withdraw</font> (amount) |
+| <font color="#FFA600">accountNumber </font>: Int <br/> <font color="#FFA600">balance </font>: Int<br/> <font color="#FFA600">accountHolder </font> : String |
+| <font color="#F2613F">deposit</font>(amount) <br/> <font color="#F2613F">withdraw</font>(amount) |
 
 
 #### Attributes:
-  - <font color="#FFA600">Attributes</font> are characteristics or properties that describe the objects created from the class. For instance, in the case of a <font color="#007bff">`BankAccount`</font>, attributes could include <font color="#FFA600">`account_number`</font>, <font color="#FFA600">`balance`</font>, and <font color="#FFA600">`account_holder`</font>.
+  - <font color="#FFA600">Attributes</font> are characteristics or properties that describe the objects created from the class. For instance, in the case of a <font color="#007bff">`BankAccount`</font>, attributes could include <font color="#FFA600">`accountNumber`</font>, <font color="#FFA600">`balance`</font>, and <font color="#FFA600">`accountHolder`</font>.
 
 #### Methods:
 - <font color="#F2613F">Methods</font> are functions that define the behavior of the objects created from the class. In the context of a <font color="#007bff">`BankAccount`</font>, methods could include operations like <font color="#F2613F">`deposit`</font> and <font color="#F2613F">`withdraw`</font>, which specify how money can be added to or withdrawn from an account.

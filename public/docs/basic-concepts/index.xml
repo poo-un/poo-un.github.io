@@ -43,13 +43,26 @@
   &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
   &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
     &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
-      A class is a user-defined data type. It consists of data members and member functions, which can be accessed and used by creating an instance of that class. It represents the set of properties or methods that are common to all objects of one type.
+      A class is a user-defined data type. A class is a blueprint for creating objects that share common properties and behaviors.
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;p&gt;A &lt;font color=&#34;#007bff&#34;&gt;class&lt;/font&gt; can be thought of as a blueprint that defines the structure of objects in a program. It&amp;rsquo;s like a mold from which individual objects are created, each with its own attributes and behaviors.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s consider the concept of a class using the example of a &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt;.&lt;/p&gt;
 &lt;p&gt;A &lt;font color=&#34;#007bff&#34;&gt;class&lt;/font&gt; is like a blueprint or template for creating objects. In our example, the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class represents the blueprint for creating individual bank account objects.&lt;/p&gt;
+&lt;pre class=&#34;mermaid mt-6&#34;&gt;&lt;/pre&gt;&lt;div style=&#34;display: flex; justify-content: center;&#34;&gt;
+    &lt;div class=&#34;mermaid&#34;&gt;
+    classDiagram
+    class BankAccount {
+    Int    accountNumber
+    Int    Balance 
+    String accountHolder
+    deposit(amount)
+    withdraw(amount)
+    } 
+    &lt;/div&gt;
+&lt;/div&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -58,23 +71,22 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;account_number &lt;/font&gt;: Int &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance &lt;/font&gt;: Int&lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;account_holder &lt;/font&gt; : String&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;accountNumber &lt;/font&gt;: Int &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance &lt;/font&gt;: Int&lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;accountHolder &lt;/font&gt; : String&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FF75A0&#34;&gt;+deposit&lt;/font&gt; (amount) &lt;br/&gt; &lt;font color=&#34;#FF75A0&#34;&gt;+withdraw&lt;/font&gt; (amount)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#F2613F&#34;&gt;deposit&lt;/font&gt;(amount) &lt;br/&gt; &lt;font color=&#34;#F2613F&#34;&gt;withdraw&lt;/font&gt;(amount)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;Attributes:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;attributes&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#attributes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;font color=&#34;#FFA600&#34;&gt;Attributes&lt;/font&gt; are characteristics or properties that describe the objects created from the class. For instance, in the case of a &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt;, attributes could include &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account_number&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account_holder&lt;/code&gt;&lt;/font&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#FFA600&#34;&gt;Attributes&lt;/font&gt; are characteristics or properties that describe the objects created from the class. For instance, in the case of a &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt;, attributes could include &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountNumber&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountHolder&lt;/code&gt;&lt;/font&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Methods:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;methods&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#methods&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;font color=&#34;#F2613F&#34;&gt;Methods&lt;/font&gt; are functions that define the behavior of the objects created from the class. In the context of a &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt;, methods could include operations like &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw&lt;/code&gt;&lt;/font&gt;, which specify how money can be added to or withdrawn from an account.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;This &lt;font color=&#34;#007bff&#34;&gt;class&lt;/font&gt; blueprint defines the structure for creating &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; objects. Each object instantiated from this class inherits &lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt; such as &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account number&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account holder&lt;/code&gt;&lt;/font&gt;. Additionally, the &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; such as &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit()&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw()&lt;/code&gt;&lt;/font&gt;, enable the objects to perform operations like adding or withdrawing money.&lt;/p&gt;
+&lt;p&gt;This class blueprint defines the structure for creating &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; objects. Each object instantiated from this class inherits &lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt; such as &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account number&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account holder&lt;/code&gt;&lt;/font&gt;. Additionally, the &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; such as &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit()&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw()&lt;/code&gt;&lt;/font&gt;, enable the objects to perform operations like adding or withdrawing money.&lt;/p&gt;
 
       </description>
     </item>
@@ -108,48 +120,44 @@
   &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
   &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
     &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
-      In object-oriented programming (OOP), an &lt;font color=&#34;#0047ab&#34;&gt;object&lt;/font&gt; is an instance of a &lt;font color=&#34;#007bff&#34;&gt;class&lt;/font&gt;. It represents a real-world entity with its own set of properties attributes and behaviors methods. &lt;font color=&#34;#0047ab&#34;&gt;Objects&lt;/font&gt; are the building blocks of OOP and are used to model and interact with the system.
+      In object-oriented programming (OOP), an &lt;font color=&#34;#0047ab&#34;&gt;object&lt;/font&gt; is an instance of a &lt;font color=&#34;#007bff&#34;&gt;class&lt;/font&gt;, encapsulating attributes and behaviors to model real-world entities.
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Remember that we have a class called &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt;. This class represents a bank account, and it has &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; to perform banking operations like depositing money and withdrawing money.&lt;/p&gt;
-&lt;p&gt;In our example, an &lt;font color=&#34;#0047ab&#34;&gt;object&lt;/font&gt; is an instance of the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class. Each individual bank account created from the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class is an &lt;font color=&#34;#0047ab&#34;&gt;object&lt;/font&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Attributes&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Each bank account object has its own set of attributes that describe its specific state. For instance, each bank account object might have attributes like &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account_number&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account_holder&lt;/code&gt;&lt;/font&gt;.&lt;/li&gt;
+&lt;p&gt;In our example, an object is an instance of the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class. Each individual bank account created from the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class is an object.&lt;/p&gt;
+&lt;p&gt;These objects, such as &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;account1&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;account2&lt;/code&gt;&lt;/font&gt;, inherit &lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; from the class, but
+hold their own unique data.&lt;/p&gt;
+&lt;h4&gt;Attributes:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;attributes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#attributes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Each bank account object has its own set of attributes that describe its specific state. For instance, each bank account object might have attributes like &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountNumber&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountHolder&lt;/code&gt;&lt;/font&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
+&lt;h4&gt;Methods:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;methods&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#methods&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Objects have access to the methods defined by their class. These methods define the behavior or actions that objects can perform. For example, each bank account object can use methods like &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw&lt;/code&gt;&lt;/font&gt; to manage its funds.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Example:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;example&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#example&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Suppose we create two bank account &lt;font color=&#34;#0047ab&#34;&gt;objects&lt;/font&gt; from the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class:&lt;/p&gt;
+&lt;h4&gt;Example:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;example&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Suppose we create two bank account objects from the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;ㅤㅤㅤㅤㅤ&lt;font color=&#34;#007bff&#34;&gt;Account 1&lt;/font&gt;ㅤㅤㅤㅤㅤ&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;ㅤㅤㅤㅤㅤ&lt;font color=&#34;#007bff&#34;&gt;Account 2&lt;/font&gt;ㅤㅤㅤㅤㅤ&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;ㅤㅤㅤㅤㅤ&lt;font color=&#34;#007bff&#34;&gt;account1&lt;/font&gt;ㅤㅤㅤㅤㅤ&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;ㅤㅤㅤㅤㅤ&lt;font color=&#34;#007bff&#34;&gt;account2&lt;/font&gt;ㅤㅤㅤㅤㅤ&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;account_number&lt;/font&gt;: 123456 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance&lt;/font&gt;: $500 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;account_holder&lt;/font&gt;: John Doe&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;account_number&lt;/font&gt;: 789012 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance&lt;/font&gt;: $1000 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;account_holder&lt;/font&gt;: Jane Smith&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;accountNumber&lt;/font&gt;: 123456 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance&lt;/font&gt;: 500 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;accountHolder&lt;/font&gt;: John Doe&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;accountNumber&lt;/font&gt;: 789012 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance&lt;/font&gt;: 1000 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;accountHolder&lt;/font&gt;: Jane Smith&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FF75A0&#34;&gt;+deposit&lt;/font&gt; (amount) &lt;br/&gt; &lt;font color=&#34;#FF75A0&#34;&gt;+withdraw&lt;/font&gt; (amount)&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FF75A0&#34;&gt;+deposit&lt;/font&gt; (amount) &lt;br/&gt; &lt;font color=&#34;#FF75A0&#34;&gt;+withdraw&lt;/font&gt; (amount)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#F2613F&#34;&gt;deposit&lt;/font&gt;(amount) &lt;br/&gt; &lt;font color=&#34;#F2613F&#34;&gt;withdraw&lt;/font&gt;(amount)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#F2613F&#34;&gt;deposit&lt;/font&gt;(amount) &lt;br/&gt; &lt;font color=&#34;#F2613F&#34;&gt;withdraw&lt;/font&gt;(amount)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Each bank account &lt;font color=&#34;#0047ab&#34;&gt;object&lt;/font&gt; represents a distinct bank account with its own unique attributes and behaviors. For example, &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;Account 1&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;Account 2&lt;/code&gt;&lt;/font&gt; have different &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account numbers&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balances&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account olders&lt;/code&gt;&lt;/font&gt;. They can each independently use the &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw&lt;/code&gt;&lt;/font&gt; methods to manage their funds.&lt;/p&gt;
+&lt;p&gt;Each bank account object represents a distinct bank account with its own unique attributes and behaviors. For example, &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;account1&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;account2&lt;/code&gt;&lt;/font&gt; have different &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountNumbers&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balances&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountHolders&lt;/code&gt;&lt;/font&gt;. They can each independently use the &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw&lt;/code&gt;&lt;/font&gt; methods to manage their funds.&lt;/p&gt;
 
       </description>
     </item>
@@ -163,46 +171,71 @@
       <description>
         
         
-        &lt;h2&gt;Attributes in Object-Oriented Programming&lt;span class=&#34;absolute -mt-20&#34; id=&#34;attributes-in-object-oriented-programming&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#attributes-in-object-oriented-programming&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Attributes, also known as properties or fields, are the characteristics or data associated with an object in Object-Oriented Programming (OOP). They represent the state of an object and define its behavior.&lt;/p&gt;
-&lt;h3&gt;Example: Bank Account Class&lt;span class=&#34;absolute -mt-20&#34; id=&#34;example-bank-account-class&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#example-bank-account-class&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Let&amp;rsquo;s delve into the concept of attributes using the example of a &lt;code&gt;BankAccount&lt;/code&gt;.&lt;/p&gt;
-&lt;h4&gt;Attributes Concept:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;attributes-concept&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#attributes-concept&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Attributes are characteristics or properties that describe the objects created from a class. In our example, a bank account object would have various attributes that define its state, such as &lt;code&gt;account_number&lt;/code&gt;, &lt;code&gt;balance&lt;/code&gt;, and &lt;code&gt;account_holder&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;Bank Account Attributes:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;bank-account-attributes&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#bank-account-attributes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Consider the attributes of a bank account object:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Account Number&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;This attribute uniquely identifies each bank account.&lt;/li&gt;
-&lt;li&gt;Example: &lt;code&gt;123456789&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Balance&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;This attribute represents the amount of money currently in the bank account.&lt;/li&gt;
-&lt;li&gt;Example: &lt;code&gt;$1000&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Account Holder&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;This attribute specifies the name of the person who owns the bank account.&lt;/li&gt;
-&lt;li&gt;Example: &lt;code&gt;John Doe&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bank Account Class:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;bank-account-class&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#bank-account-class&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When we define the &lt;code&gt;BankAccount&lt;/code&gt; class, we specify these attributes as part of its structure. Each bank account object created from this class will have its own set of attribute values, allowing us to differentiate between different accounts.&lt;/p&gt;
-&lt;p&gt;For instance, if we create a bank account object for John Doe, it will have an &lt;code&gt;account_number&lt;/code&gt; of &lt;code&gt;123456789&lt;/code&gt;, a &lt;code&gt;balance&lt;/code&gt; of &lt;code&gt;$1000&lt;/code&gt;, and an &lt;code&gt;account_holder&lt;/code&gt; name of &lt;code&gt;John Doe&lt;/code&gt;. These attributes collectively describe the state of the bank account object.&lt;/p&gt;
+        
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200&#34;&gt;
+  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
+  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
+    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+      In object-oriented programming (OOP), an &lt;font color=&#34;#FFA600&#34;&gt;attribute&lt;/font&gt; (also known as a property or field) is a characteristic or property of an object. It represents the data that an object holds and defines its state.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;font color=&#34;#FFA600&#34;&gt;Attributes&lt;/font&gt; are defined within a &lt;font color=&#34;#007bff&#34;&gt;class&lt;/font&gt;, and each object created from that class has its own unique values for those attributes. For example, in a &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class, attributes might include the &lt;font color=&#34;#FFA600&#34;&gt;accountNumber&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;balance&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;accountHolder&lt;/font&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s delve into the concept of attributes considering the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class. Each bank account object created from this class will have its own set of attributes:&lt;/p&gt;
+&lt;h4&gt;Example&lt;span class=&#34;absolute -mt-20&#34; id=&#34;example&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Consider the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class. Each bank account object created from this class will have its own set of attributes:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;ㅤㅤㅤㅤㅤ&lt;font color=&#34;#007bff&#34;&gt;BankAccount&lt;/font&gt;ㅤㅤㅤㅤㅤ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;accountNumber&lt;/font&gt;: Int &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance&lt;/font&gt;: Int &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;accountHolder&lt;/font&gt;: String&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Suppose we create two &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; objects:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;ㅤㅤㅤㅤㅤ&lt;font color=&#34;#007bff&#34;&gt;account1&lt;/font&gt;ㅤㅤㅤㅤㅤ&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;ㅤㅤㅤㅤㅤ&lt;font color=&#34;#007bff&#34;&gt;account2&lt;/font&gt;ㅤㅤㅤㅤㅤ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;accountNumber&lt;/font&gt;: 123456 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance&lt;/font&gt;: 500 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;accountHolder&lt;/font&gt;: John Doe&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;accountNumber&lt;/font&gt;: 789012 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance&lt;/font&gt;: 1000 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;accountHolder&lt;/font&gt;: Jane Smith&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In this example, we see that although both &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;account1&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;account2&lt;/code&gt;&lt;/font&gt; are instances of the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class, each object has its own unique attribute values.&lt;/p&gt;
+&lt;p&gt;Each object of the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class shares the same &lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt;, but the values of these attributes differ from one object to another.
+This distinction between objects is a fundamental concept in object-oriented programming, where each object carries its own specific data while sharing the same structure and behavior as defined by the class. Understanding how &lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt; work helps in managing and manipulating objects effectively within a program.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
-      <title>Methods concept</title>
+      <title>Methods Concept</title>
       <link>http://localhost:1313/docs/basic-concepts/methods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -210,32 +243,95 @@
       <description>
         
         
-        &lt;h3&gt;Methods in Object-Oriented Programming&lt;span class=&#34;absolute -mt-20&#34; id=&#34;methods-in-object-oriented-programming&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#methods-in-object-oriented-programming&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Methods are an essential part of object-oriented programming (OOP). They are functions that are associated with a specific class or object and are used to perform actions or provide behavior for that class or object.&lt;/p&gt;
-&lt;h3&gt;Example: Bank Account Class&lt;span class=&#34;absolute -mt-20&#34; id=&#34;example-bank-account-class&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#example-bank-account-class&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Let&amp;rsquo;s say we have a class called &lt;code&gt;BankAccount&lt;/code&gt;. This class represents a bank account, and it has methods to perform banking operations like depositing money and withdrawing money.&lt;/p&gt;
-&lt;h4&gt;Depositing Money:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;depositing-money&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#depositing-money&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Method Name:&lt;/strong&gt; &lt;code&gt;deposit&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;What it does:&lt;/strong&gt; Adds money to the bank account.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;For Example:&lt;/strong&gt; If you want to put $100 into your bank account, you would use the &lt;code&gt;deposit&lt;/code&gt; method.&lt;/li&gt;
+        
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200&#34;&gt;
+  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
+  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
+    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+      In object-oriented programming, &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; define the actions that an object can perform. They are functions within a class that describe the behaviors or operations of the objects created from the class.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Methods are integral to how objects interact with each other and perform tasks. Let’s explore this concept using the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class example:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;ㅤㅤㅤㅤㅤ&lt;font color=&#34;#007bff&#34;&gt;BankAccount&lt;/font&gt;ㅤㅤㅤㅤㅤ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#F2613F&#34;&gt;deposit&lt;/font&gt;(amount) &lt;br/&gt; &lt;font color=&#34;#F2613F&#34;&gt;withdraw&lt;/font&gt;(amount)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;Example:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;example&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;For instance, let&amp;rsquo;s use the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class to create two bank account objects:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;ㅤㅤㅤㅤㅤ&lt;font color=&#34;#007bff&#34;&gt;account1&lt;/font&gt;ㅤㅤㅤㅤㅤ&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;ㅤㅤㅤㅤㅤ&lt;font color=&#34;#007bff&#34;&gt;account2&lt;/font&gt;ㅤㅤㅤㅤㅤ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;accountNumber&lt;/font&gt;: 123456 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance&lt;/font&gt;: 500 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;accountHolder&lt;/font&gt;: John Doe&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#FFA600&#34;&gt;accountNumber&lt;/font&gt;: 789012 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;balance&lt;/font&gt;: 1000 &lt;br/&gt; &lt;font color=&#34;#FFA600&#34;&gt;accountHolder&lt;/font&gt;: Jane Smith&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#F2613F&#34;&gt;deposit&lt;/font&gt;(amount) &lt;br/&gt; &lt;font color=&#34;#F2613F&#34;&gt;withdraw&lt;/font&gt;(amount)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=&#34;#F2613F&#34;&gt;deposit&lt;/font&gt;(amount) &lt;br/&gt; &lt;font color=&#34;#F2613F&#34;&gt;withdraw&lt;/font&gt;(amount)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;Method Usage:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;method-usage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#method-usage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;account1&lt;/code&gt;&lt;/font&gt; can use the &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit&lt;/code&gt;&lt;/font&gt; method to add funds and the &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw&lt;/code&gt;&lt;/font&gt; method to withdraw funds.&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;account2&lt;/code&gt;&lt;/font&gt; has the same methods but can perform &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw&lt;/code&gt;&lt;/font&gt; operations based on its own balance and account details.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Withdrawing Money:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;withdrawing-money&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#withdrawing-money&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Method Name:&lt;/strong&gt; &lt;code&gt;withdraw&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;What it does:&lt;/strong&gt; Takes money out of the bank account, but only if there&amp;rsquo;s enough money in the account.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;For Example:&lt;/strong&gt; If you want to take out $50 from your bank account, you would use the &lt;code&gt;withdraw&lt;/code&gt; method. But if you only have $30 in your account, you can&amp;rsquo;t withdraw $50 because you don&amp;rsquo;t have enough money.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Bank Account Operations&lt;span class=&#34;absolute -mt-20&#34; id=&#34;bank-account-operations&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#bank-account-operations&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Let&amp;rsquo;s walk through some simple operations you can do with your bank account:&lt;/p&gt;
-&lt;h4&gt;Depositing Funds:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;depositing-funds&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#depositing-funds&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;You get your paycheck and want to put $500 into your bank account. You&amp;rsquo;d use the &lt;code&gt;deposit&lt;/code&gt; method to add $500 to your account balance.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Withdrawing Funds:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;withdrawing-funds&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#withdrawing-funds&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;You need to pay your monthly bills, so you withdraw $200 from your bank account. You&amp;rsquo;d use the &lt;code&gt;withdraw&lt;/code&gt; method to take out $200 from your account balance. But if you try to withdraw $500 when you only have $300 in your account, you can&amp;rsquo;t do it because you don&amp;rsquo;t have enough money.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Each object has access to the same &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; defined in the class, which enables them to perform similar actions, but the outcomes of these methods depend on the object&amp;rsquo;s specific attributes and current state.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-orange-100 bg-orange-50 text-orange-800 dark:border-orange-400/30 dark:bg-orange-400/20 dark:text-orange-300&#34;&gt;
+  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;&lt;/div&gt;
+  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
+    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+      Explore the &lt;strong&gt;Basic Principles&lt;/strong&gt; chapter to learn more about how methods integrate with the core principles of OOP, including inheritance, polymorphism, abstraction, and encapsulation.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>
