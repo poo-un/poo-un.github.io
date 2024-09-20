@@ -40,5 +40,5 @@ To truly harness the power of OOP, it's essential to understand its foundational
 
 {{< cards >}}
   {{< card link="basic-concepts" title="Basic Concepts" icon="code" >}}
-  {{< card link="basic-principles" title="Basic Principles" icon="code" >}}
+  {{< card link="core-principles" title="Core Principles" icon="code" >}}
 {{< /cards >}}
