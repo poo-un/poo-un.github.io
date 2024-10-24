@@ -25,17 +25,17 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      # Build the site with Hugo
+      # Build the site with Hugo, output to the docs folder
       - name: Build with Hugo
-        run: hugo --minify  # Builds the site into the public directory
+        run: hugo --minify -d docs  # Build the site into the docs directory
 
-      # Commit the generated files in the public directory back to the main branch
+      # Commit the generated files in the docs directory back to the main branch
       - name: Commit built files
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add public
-          git commit -m "Deploy site from GitHub Actions" || echo "No changes to commit"
+          git add docs
+          git commit -m "Deploy site to docs from GitHub Actions" || echo "No changes to commit"
 
       # Push the built files to the main branch
       - name: Push changes
