@@ -4,8 +4,10 @@ on:
   push:
     branches:
       - main  # Trigger on push to main
-
   workflow_dispatch:  # Allows manual trigger from the Actions tab
+
+permissions:
+  contents: write  # Allow pushing built files to the repository
 
 jobs:
   build:
@@ -27,9 +29,17 @@ jobs:
       - name: Build with Hugo
         run: hugo --minify  # Builds the site into the public directory
 
-      # Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      # Commit the generated files in the public directory back to the main branch
+      - name: Commit built files
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add public
+          git commit -m "Deploy site from GitHub Actions" || echo "No changes to commit"
+
+      # Push the built files to the main branch
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # Deploy the public directory
+          branch: main
