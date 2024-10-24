@@ -1,10 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Object-oriented programming course - UN – Java</title>
+    <title>Universidad Nacional de Colombia POO hub – Java</title>
     <link>http://localhost:1313/methodologies/languages/java/</link>
-    <description>Recent content in Java on Object-oriented programming course - UN</description>
+    <description>Recent content in Java on Universidad Nacional de Colombia POO hub</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     
 	  <atom:link href="http://localhost:1313/methodologies/languages/java/index.xml" rel="self" type="application/rss+xml" />
     

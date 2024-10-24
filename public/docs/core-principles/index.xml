@@ -1,10 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Object-oriented programming course - UN – Principles of OOP</title>
+    <title>Universidad Nacional de Colombia POO hub – Principles of OOP</title>
     <link>http://localhost:1313/docs/core-principles/</link>
-    <description>Recent content in Principles of OOP on Object-oriented programming course - UN</description>
+    <description>Recent content in Principles of OOP on Universidad Nacional de Colombia POO hub</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     
 	  <atom:link href="http://localhost:1313/docs/core-principles/index.xml" rel="self" type="application/rss+xml" />
     
@@ -39,19 +39,24 @@
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;div class=&#34;hx-select-none hx-text-xl&#34; style=&#34;font-family: &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;;&#34;&gt;
+        ℹ️
+      &lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;font color=&#34;#1E90FF&#34;&gt;Encapsulation&lt;/font&gt; is a fundamental principle of object-oriented programming (OOP) that restricts direct access to some of an object’s components and keeps data safe within objects. It is about bundling the data (&lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt;) and the &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; that operate on that data into a single unit or class, while controlling access to the data through well-defined interfaces.
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;font color=&#34;#1E90FF&#34;&gt;Encapsulation&lt;/font&gt; allows the internal state of an &lt;font color=&#34;#0047ab&#34;&gt;object&lt;/font&gt; be hidden from the outside world. External code cannot directly access or modify the &lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt; of an &lt;font color=&#34;#0047ab&#34;&gt;object&lt;/font&gt;; instead, interaction happens through &lt;font color=&#34;#F2613F&#34;&gt;public methods&lt;/font&gt;, which manage how data is accessed and changed. This principle protects the integrity of the object and enforces a controlled interaction.&lt;/p&gt;
-&lt;h4&gt;Bank Account Example:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;bank-account-example&#34;&gt;&lt;/span&gt;
+&lt;h4&gt;Bank Account Example:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bank-account-example&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#bank-account-example&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;To demonstrate this principle, let’s revisit the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class. We will use &lt;font color=&#34;#1E90FF&#34;&gt;encapsulation&lt;/font&gt; to restrict direct access to the &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;account attributes&lt;/code&gt;&lt;/font&gt; and allow interactions only through the &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit()&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw()&lt;/code&gt;&lt;/font&gt; methods:&lt;/p&gt;
-&lt;pre class=&#34;mermaid mt-6&#34;&gt;classDiagram
+&lt;pre class=&#34;mermaid hx-mt-6&#34;&gt;classDiagram
 class BankAccount {
   - Int accountNumber
   - Int balance 
@@ -73,10 +78,13 @@ class BankAccount {
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-orange-100 bg-orange-50 text-orange-800 dark:border-orange-400/30 dark:bg-orange-400/20 dark:text-orange-300&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       The &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountNumber&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountHolder&lt;/code&gt;&lt;/font&gt; are private 🔒, meaning they cannot be accessed or modified directly from outside the class.
     &lt;/div&gt;
   &lt;/div&gt;
@@ -96,24 +104,27 @@ class BankAccount {
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-orange-100 bg-orange-50 text-orange-800 dark:border-orange-400/30 dark:bg-orange-400/20 dark:text-orange-300&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       The &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit()&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw()&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;getBalance()&lt;/code&gt;&lt;/font&gt; methods are public 🔓 and allow controlled interaction with the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class.
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;font color=&#34;#1E90FF&#34;&gt;Encapsulation&lt;/font&gt; ensures that an object&amp;rsquo;s internal state is protected from unintended interference, making it easier to maintain and modify code. It also improves the security and robustness of a program.&lt;/p&gt;
-&lt;h4&gt;Why Encapsulation Matters?&lt;span class=&#34;absolute -mt-20&#34; id=&#34;why-encapsulation-matters&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#why-encapsulation-matters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h5&gt;Data Integrity&lt;span class=&#34;absolute -mt-20&#34; id=&#34;data-integrity&#34;&gt;&lt;/span&gt;
+&lt;h4&gt;Why Encapsulation Matters?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;why-encapsulation-matters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-encapsulation-matters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h5&gt;Data Integrity&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;data-integrity&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#data-integrity&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;By restricting direct access to &lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt;, encapsulation helps ensure that the internal state of an object remains consistent. You can&amp;rsquo;t set invalid or unsafe values on the &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt; directly; instead, it’s modified through controlled &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; that validate input.&lt;/p&gt;
-&lt;h5&gt;Modularity&lt;span class=&#34;absolute -mt-20&#34; id=&#34;modularity&#34;&gt;&lt;/span&gt;
+&lt;h5&gt;Modularity&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;modularity&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#modularity&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;&lt;font color=&#34;#1E90FF&#34;&gt;Encapsulation&lt;/font&gt; allows changes to the internal implementation of a class without affecting how other parts of the code interact with it. For example, you can change how &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;getBalance()&lt;/code&gt;&lt;/font&gt; calculates the balance, and the external code won’t need to be updated.&lt;/p&gt;
-&lt;h5&gt;Security&lt;span class=&#34;absolute -mt-20&#34; id=&#34;security&#34;&gt;&lt;/span&gt;
+&lt;h5&gt;Security&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;security&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#security&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;By keeping &lt;font color=&#34;#FFA600&#34;&gt;private attributes&lt;/font&gt; inaccessible from outside, &lt;font color=&#34;#1E90FF&#34;&gt;encapsulation&lt;/font&gt; enhances security. For example, it prevents unauthorized or unintended modifications to critical data, like changing an account’s balance directly.&lt;/p&gt;
-&lt;h5&gt;Ease of Maintenance&lt;span class=&#34;absolute -mt-20&#34; id=&#34;ease-of-maintenance&#34;&gt;&lt;/span&gt;
+&lt;h5&gt;Ease of Maintenance&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ease-of-maintenance&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#ease-of-maintenance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;&lt;font color=&#34;#1E90FF&#34;&gt;Encapsulation&lt;/font&gt; makes the codebase easier to maintain. Changes to internal workings of the &lt;font color=&#34;#0047ab&#34;&gt;object&lt;/font&gt; can be made without breaking the rest of the system since the external interface remains the same.&lt;/p&gt;
 
 
@@ -131,10 +142,15 @@ class BankAccount {
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;div class=&#34;hx-select-none hx-text-xl&#34; style=&#34;font-family: &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;;&#34;&gt;
+        ℹ️
+      &lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;p&gt;&lt;strong&gt;Next Step:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Now that you’ve mastered how &lt;font color=&#34;#1E90FF&#34;&gt;encapsulation&lt;/font&gt; protects object data and provides controlled access, proceed to learn about &lt;font color=&#34;#32CD32&#34;&gt;Abstraction&lt;/font&gt;, which focuses on simplifying complex systems by hiding unnecessary details.&lt;/p&gt;
 
@@ -171,10 +187,15 @@ class BankAccount {
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;div class=&#34;hx-select-none hx-text-xl&#34; style=&#34;font-family: &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;;&#34;&gt;
+        ℹ️
+      &lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;font color=&#34;#32CD32&#34;&gt;Abstraction&lt;/font&gt; is a core principle of object-oriented programming (OOP) that focuses on hiding complex implementation details and exposing only the essential features of an &lt;font color=&#34;#0047ab&#34;&gt;object&lt;/font&gt;. By using abstraction, developers can simplify complex systems by breaking them down into more manageable parts.
     &lt;/div&gt;
   &lt;/div&gt;
@@ -182,9 +203,9 @@ class BankAccount {
 
 &lt;p&gt;In OOP, &lt;font color=&#34;#32CD32&#34;&gt;Abstraction&lt;/font&gt; enables you to represent essential aspects of an &lt;font color=&#34;#0047ab&#34;&gt;object&lt;/font&gt; without exposing its internal workings. It allows for designing classes that can interact with other parts of the system while hiding unnecessary complexities.&lt;/p&gt;
 &lt;p&gt;For example, in a banking application, you might need to interact with &lt;font color=&#34;#007bff&#34;&gt;bank accounts&lt;/font&gt;, but you don’t need to know the complex algorithms that calculate interest or handle transactions. Instead, you only care about the essential methods and attributes like &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit()&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw()&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt;.&lt;/p&gt;
-&lt;h4&gt;Bank Account Example&lt;span class=&#34;absolute -mt-20&#34; id=&#34;bank-account-example&#34;&gt;&lt;/span&gt;
+&lt;h4&gt;Bank Account Example&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bank-account-example&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#bank-account-example&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Let’s &lt;font color=&#34;#32CD32&#34;&gt;abstract&lt;/font&gt; the core functionality of a bank account by defining a &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class that hides the internal logic while exposing essential &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; for interacting with it.&lt;/p&gt;
-&lt;pre class=&#34;mermaid mt-6&#34;&gt;classDiagram
+&lt;pre class=&#34;mermaid hx-mt-6&#34;&gt;classDiagram
 class BankAccount {
   - Int accountNumber
   - Int balance 
@@ -206,10 +227,13 @@ class BankAccount {
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-orange-100 bg-orange-50 text-orange-800 dark:border-orange-400/30 dark:bg-orange-400/20 dark:text-orange-300&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       Attributes (&lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountNumber&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountHolder&lt;/code&gt;&lt;/font&gt;) are &lt;code&gt;private&lt;/code&gt; 🔒
     &lt;/div&gt;
   &lt;/div&gt;
@@ -232,22 +256,25 @@ For example,  without abstraction, an external user could directly modify attrib
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-orange-100 bg-orange-50 text-orange-800 dark:border-orange-400/30 dark:bg-orange-400/20 dark:text-orange-300&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       Methods like &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit(amount)&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw(amount)&lt;/code&gt;&lt;/font&gt; are &lt;code&gt;public&lt;/code&gt; 🔓
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;These methods provide an interface to interact with the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; object. Through abstraction, users can perform essential operations without needing to know how these methods are implemented internally.&lt;/p&gt;
-&lt;h4&gt;Why Abstraction Matters?&lt;span class=&#34;absolute -mt-20&#34; id=&#34;why-abstraction-matters&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#why-abstraction-matters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h5&gt;Separation of Concerns&lt;span class=&#34;absolute -mt-20&#34; id=&#34;separation-of-concerns&#34;&gt;&lt;/span&gt;
+&lt;h4&gt;Why Abstraction Matters?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;why-abstraction-matters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-abstraction-matters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h5&gt;Separation of Concerns&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;separation-of-concerns&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#separation-of-concerns&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;&lt;font color=&#34;#32CD32&#34;&gt;Abstraction&lt;/font&gt; ensures that each part of the system focuses on a specific task. The &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class manages the account data internally, while external code only interacts with it through public methods. This separation makes the system easier to understand, maintain, and extend.&lt;/p&gt;
-&lt;h5&gt;Security&lt;span class=&#34;absolute -mt-20&#34; id=&#34;security&#34;&gt;&lt;/span&gt;
+&lt;h5&gt;Security&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;security&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#security&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;By hiding the internal state of the object, we prevent unauthorized or unintended changes. For instance, without abstraction, a user could directly change the &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountNumber&lt;/code&gt;&lt;/font&gt; of an account. &lt;font color=&#34;#32CD32&#34;&gt;Abstraction&lt;/font&gt; ensures that such sensitive data is protected, allowing only authorized interactions through the defined methods.&lt;/p&gt;
-&lt;h5&gt;Simplified Interface&lt;span class=&#34;absolute -mt-20&#34; id=&#34;simplified-interface&#34;&gt;&lt;/span&gt;
+&lt;h5&gt;Simplified Interface&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;simplified-interface&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#simplified-interface&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;Users of the class only need to focus on what’s essential for them. A person using the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class doesn&amp;rsquo;t care about how the balance is stored in memory or how funds are transferred; they only care about interacting with the interface provided—depositing, withdrawing, and checking the balance.&lt;/p&gt;
 &lt;p&gt;Through &lt;font color=&#34;#32CD32&#34;&gt;Abstraction&lt;/font&gt;, we define a simple interface for interacting with objects, hiding unnecessary details while maintaining control over how data is accessed and modified. This principle enhances security, improves code maintainability, and ensures a cleaner, more understandable interface.&lt;/p&gt;
 
@@ -266,10 +293,15 @@ For example,  without abstraction, an external user could directly modify attrib
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;div class=&#34;hx-select-none hx-text-xl&#34; style=&#34;font-family: &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;;&#34;&gt;
+        ℹ️
+      &lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;p&gt;&lt;strong&gt;Next Step:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Now that you’ve seen how &lt;font color=&#34;#32CD32&#34;&gt;abstraction&lt;/font&gt; simplifies object interactions, explore &lt;font color=&#34;#FF6347&#34;&gt;Inheritance&lt;/font&gt; , which allows a class (called a child or subclass) to inherit properties and behaviors from another class (called a parent or superclass).&lt;/p&gt;
 
@@ -306,19 +338,24 @@ For example,  without abstraction, an external user could directly modify attrib
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;div class=&#34;hx-select-none hx-text-xl&#34; style=&#34;font-family: &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;;&#34;&gt;
+        ℹ️
+      &lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;font color=&#34;#FF6347&#34;&gt;Inheritance&lt;/font&gt; is a fundamental principle of object-oriented programming (OOP) that allows a class (called a child or subclass) to inherit properties and behaviors from another class (called a parent or superclass). This enables code reusability, as common &lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; can be defined in the parent class and inherited by its subclasses.
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;font color=&#34;#FF6347&#34;&gt;Inheritance&lt;/font&gt; promotes the reusability of code by allowing &lt;font color=&#34;#007bff&#34;&gt;classes&lt;/font&gt; to derive common characteristics from a base class. It enables the creation of hierarchical relationships between &lt;font color=&#34;#007bff&#34;&gt;classes&lt;/font&gt;, where a child class can inherit and extend the functionality of its parent class. Subclasses can override or extend inherited methods, adding flexibility and specificity.&lt;/p&gt;
-&lt;h4&gt;Bank Account Example:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;bank-account-example&#34;&gt;&lt;/span&gt;
+&lt;h4&gt;Bank Account Example:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bank-account-example&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#bank-account-example&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;To illustrate &lt;font color=&#34;#FF6347&#34;&gt;Inheritance&lt;/font&gt;, let’s extend our &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; class to create specialized types of accounts. For instance, we can create a &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;SavingsAccount&lt;/code&gt;&lt;/font&gt; class that &lt;font color=&#34;#FF6347&#34;&gt;inherits&lt;/font&gt; from &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; and adds a specific interest rate.&lt;/p&gt;
-&lt;pre class=&#34;mermaid mt-6&#34;&gt;classDiagram
+&lt;pre class=&#34;mermaid hx-mt-6&#34;&gt;classDiagram
 class BankAccount {
   - Int accountNumber
   - Int balance 
@@ -347,10 +384,13 @@ BankAccount &lt;|-- SavingsAccount&lt;/pre&gt;
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-orange-100 bg-orange-50 text-orange-800 dark:border-orange-400/30 dark:bg-orange-400/20 dark:text-orange-300&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; provides shared &lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt; like &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountNumber&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;balance&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;accountHolder&lt;/code&gt;&lt;/font&gt;, along with shared &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; like &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;deposit()&lt;/code&gt;&lt;/font&gt;, &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw()&lt;/code&gt;&lt;/font&gt;, and &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;getBalance()&lt;/code&gt;&lt;/font&gt;.
     &lt;/div&gt;
   &lt;/div&gt;
@@ -370,24 +410,27 @@ BankAccount &lt;|-- SavingsAccount&lt;/pre&gt;
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-orange-100 bg-orange-50 text-orange-800 dark:border-orange-400/30 dark:bg-orange-400/20 dark:text-orange-300&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;SavingsAccount&lt;/code&gt;&lt;/font&gt; inherits all the properties and behaviors of &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; but adds its own &lt;font color=&#34;#FFA600&#34;&gt;&lt;code&gt;interestRate&lt;/code&gt;&lt;/font&gt;🔒 attribute and the &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;applyInterest()&lt;/code&gt;&lt;/font&gt;🔓 method.
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;This example illustrates how &lt;font color=&#34;#FF6347&#34;&gt;Inheritance&lt;/font&gt; allows new &lt;font color=&#34;#007bff&#34;&gt;classes&lt;/font&gt; to build on top of existing ones. The &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;SavingsAccount&lt;/code&gt;&lt;/font&gt; class can leverage all the functionality of &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; while introducing its own features like calculating interest. By sharing common code between the parent and child classes, inheritance reduces redundancy and promotes a cleaner design.&lt;/p&gt;
-&lt;h4&gt;Why Inheritance Matters?&lt;span class=&#34;absolute -mt-20&#34; id=&#34;why-inheritance-matters&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#why-inheritance-matters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h5&gt;Code Reusability&lt;span class=&#34;absolute -mt-20&#34; id=&#34;code-reusability&#34;&gt;&lt;/span&gt;
+&lt;h4&gt;Why Inheritance Matters?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;why-inheritance-matters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-inheritance-matters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h5&gt;Code Reusability&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code-reusability&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#code-reusability&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;&lt;font color=&#34;#FF6347&#34;&gt;Inheritance&lt;/font&gt; helps avoid duplication by allowing multiple subclasses to inherit common functionality from a single parent class. This way, shared &lt;font color=&#34;#FFA600&#34;&gt;attributes&lt;/font&gt; and &lt;font color=&#34;#F2613F&#34;&gt;methods&lt;/font&gt; can be reused without having to rewrite them in each subclass.&lt;/p&gt;
-&lt;h5&gt;Extensibility&lt;span class=&#34;absolute -mt-20&#34; id=&#34;extensibility&#34;&gt;&lt;/span&gt;
+&lt;h5&gt;Extensibility&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;extensibility&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#extensibility&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;&lt;font color=&#34;#FF6347&#34;&gt;Inheritance&lt;/font&gt; makes it easy to extend functionality. You can create new &lt;font color=&#34;#007bff&#34;&gt;classes&lt;/font&gt; based on existing ones, introducing specialized behaviors while maintaining the foundational code from the parent class.&lt;/p&gt;
-&lt;h5&gt;Maintainability&lt;span class=&#34;absolute -mt-20&#34; id=&#34;maintainability&#34;&gt;&lt;/span&gt;
+&lt;h5&gt;Maintainability&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;maintainability&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#maintainability&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;By organizing code into parent-child class relationships, &lt;font color=&#34;#FF6347&#34;&gt;Inheritance&lt;/font&gt; simplifies maintenance. Changes in the parent class automatically propagate to all subclasses, ensuring consistency across your application.&lt;/p&gt;
-&lt;h5&gt;Hierarchical Organization&lt;span class=&#34;absolute -mt-20&#34; id=&#34;hierarchical-organization&#34;&gt;&lt;/span&gt;
+&lt;h5&gt;Hierarchical Organization&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;hierarchical-organization&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#hierarchical-organization&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;&lt;font color=&#34;#FF6347&#34;&gt;Inheritance&lt;/font&gt; naturally supports the creation of a class hierarchy. This makes it easier to understand and structure complex systems, particularly when there are multiple related &lt;font color=&#34;#007bff&#34;&gt;classes&lt;/font&gt;.&lt;/p&gt;
 
 
@@ -405,10 +448,15 @@ BankAccount &lt;|-- SavingsAccount&lt;/pre&gt;
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;div class=&#34;hx-select-none hx-text-xl&#34; style=&#34;font-family: &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;;&#34;&gt;
+        ℹ️
+      &lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;p&gt;&lt;strong&gt;Next Step:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Now that you’ve learned how &lt;font color=&#34;#FF6347&#34;&gt;Inheritance&lt;/font&gt; promotes code reusability and extensibility, the next step is to explore &lt;font color=&#34;#8A2BE2&#34;&gt;Polymorphism&lt;/font&gt;, which allows objects of different classes to be treated uniformly.&lt;/p&gt;
 
@@ -445,10 +493,15 @@ BankAccount &lt;|-- SavingsAccount&lt;/pre&gt;
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;div class=&#34;hx-select-none hx-text-xl&#34; style=&#34;font-family: &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;;&#34;&gt;
+        ℹ️
+      &lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;font color=&#34;#8A2BE2&#34;&gt;Polymorphism&lt;/font&gt; is a fundamental principle in OOP that allows objects of different classes to be treated as objects of a common base class. It enables one interface to be used for different data types or classes, simplifying code and making it more flexible.
     &lt;/div&gt;
   &lt;/div&gt;
@@ -456,9 +509,9 @@ BankAccount &lt;|-- SavingsAccount&lt;/pre&gt;
 
 &lt;p&gt;&lt;font color=&#34;#8A2BE2&#34;&gt;Polymorphism&lt;/font&gt; allows for methods to behave differently based on the object that invokes them. It enables multiple classes to implement methods that share the same name but provide different functionalities depending on the specific class.&lt;/p&gt;
 &lt;p&gt;For example, a banking system might have different types of accounts such as &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;SavingsAccount&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;CheckingAccount&lt;/code&gt;&lt;/font&gt;. Both types of accounts could share a common method like &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;applyInterest()&lt;/code&gt; &lt;/font&gt;, but each would calculate interest in a different way.&lt;/p&gt;
-&lt;h4&gt;Bank Account Example:&lt;span class=&#34;absolute -mt-20&#34; id=&#34;bank-account-example&#34;&gt;&lt;/span&gt;
+&lt;h4&gt;Bank Account Example:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bank-account-example&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#bank-account-example&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Imagine we have a base class, &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt;, and a subclass, &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;SavingsAccount&lt;/code&gt;&lt;/font&gt;. The method &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;applyInterest()&lt;/code&gt;&lt;/font&gt; behaves differently in the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;SavingsAccount&lt;/code&gt;&lt;/font&gt; class compared to a more generic method in &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt;:&lt;/p&gt;
-&lt;pre class=&#34;mermaid mt-6&#34;&gt;classDiagram
+&lt;pre class=&#34;mermaid hx-mt-6&#34;&gt;classDiagram
 class BankAccount {
   + deposit(amount)
   + withdraw(amount)
@@ -485,10 +538,13 @@ BankAccount &lt;|-- SavingsAccount&lt;/pre&gt;
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-orange-100 bg-orange-50 text-orange-800 dark:border-orange-400/30 dark:bg-orange-400/20 dark:text-orange-300&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;p&gt;In the diagram:&lt;/p&gt;
 &lt;p&gt;The method &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw(amount)&lt;/code&gt;&lt;/font&gt; is &lt;font color=&#34;#8A2BE2&#34;&gt;overridden&lt;/font&gt; in the &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;SavingsAccount&lt;/code&gt;&lt;/font&gt; class to account for savings-specific rules (like a fee or limit).
 Methods within the same class that share the same name but have different parameters.&lt;/p&gt;
@@ -499,12 +555,12 @@ Methods within the same class that share the same name but have different parame
 &lt;/div&gt;
 
 &lt;p&gt;&lt;font color=&#34;#8A2BE2&#34;&gt;Polymorphism&lt;/font&gt; allows &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; and &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;SavingsAccount&lt;/code&gt;&lt;/font&gt; to share similar methods, but execute them differently depending on the object’s type. For example, both classes have a &lt;font color=&#34;#F2613F&#34;&gt;&lt;code&gt;withdraw(amount)&lt;/code&gt;&lt;/font&gt; method, but the behavior differs depending on whether the object is a &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; or a &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;SavingsAccount&lt;/code&gt;&lt;/font&gt;.&lt;/p&gt;
-&lt;h4&gt;Why Polymorphism Matters?&lt;span class=&#34;absolute -mt-20&#34; id=&#34;why-polymorphism-matters&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#why-polymorphism-matters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h5&gt;Code Reusability&lt;span class=&#34;absolute -mt-20&#34; id=&#34;code-reusability&#34;&gt;&lt;/span&gt;
+&lt;h4&gt;Why Polymorphism Matters?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;why-polymorphism-matters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-polymorphism-matters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h5&gt;Code Reusability&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code-reusability&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#code-reusability&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;&lt;font color=&#34;#8A2BE2&#34;&gt;Polymorphism&lt;/font&gt; allows a base class like &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;BankAccount&lt;/code&gt;&lt;/font&gt; to define general behavior, while subclasses like &lt;font color=&#34;#007bff&#34;&gt;&lt;code&gt;SavingsAccount&lt;/code&gt;&lt;/font&gt; can build on and modify that behavior. This makes it easier to extend the system without rewriting code.&lt;/p&gt;
-&lt;h5&gt;Maintainability&lt;span class=&#34;absolute -mt-20&#34; id=&#34;maintainability&#34;&gt;&lt;/span&gt;
+&lt;h5&gt;Maintainability&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;maintainability&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#maintainability&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;&lt;font color=&#34;#8A2BE2&#34;&gt;Polymorphism&lt;/font&gt; simplifies code maintenance. If you need to change the behavior of a method for a particular &lt;font color=&#34;#007bff&#34;&gt;class&lt;/font&gt;, you can override it in the subclass, without altering the base class or other subclasses.&lt;/p&gt;
-&lt;h5&gt;Dynamic Behavior&lt;span class=&#34;absolute -mt-20&#34; id=&#34;dynamic-behavior&#34;&gt;&lt;/span&gt;
+&lt;h5&gt;Dynamic Behavior&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dynamic-behavior&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#dynamic-behavior&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;At runtime, the system can decide which &lt;font color=&#34;#F2613F&#34;&gt;method&lt;/font&gt; to invoke depending on the object&amp;rsquo;s type, leading to more flexible and dynamic code.&lt;/p&gt;
 
 
@@ -522,10 +578,15 @@ Methods within the same class that share the same name but have different parame
 
 
 
-&lt;div class=&#34;overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200&#34;&gt;
-  &lt;div class=&#34;select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2&#34; style=&#39;font-family: &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;;&#39;&gt;ℹ️&lt;/div&gt;
-  &lt;div class=&#34;w-full min-w-0 leading-7&#34;&gt;
-    &lt;div class=&#34;mt-6 leading-7 first:mt-0&#34;&gt;
+
+
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;div class=&#34;ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2&#34;&gt;&lt;div class=&#34;hx-select-none hx-text-xl&#34; style=&#34;font-family: &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;;&#34;&gt;
+        ℹ️
+      &lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;
       &lt;p&gt;&lt;strong&gt;Next Step:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Now that you’ve mastered all four core principles of object-oriented programming (OOP), it’s time to explore the &lt;a href=&#34;http://localhost:1313/content/methodologies/_index.md&#34; &gt;Methodologies&lt;/a&gt; section, where you can dive into different learning paths. These methodologies provide various ways to apply the OOP concepts you’ve learned based on different teaching styles and use cases.&lt;/p&gt;
 
@@ -533,6 +594,8 @@ Methods within the same class that share the same name but have different parame
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;h3&gt;Quiz&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;quiz&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#quiz&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;hr&gt;
 &lt;form id=&#34;quiz&#34;&gt;
   &lt;label&gt;Question 1: What is OOP?&lt;/label&gt;&lt;br&gt;
   &lt;input type=&#34;radio&#34; name=&#34;q1&#34; value=&#34;a&#34;&gt; A programming paradigm&lt;br&gt;
