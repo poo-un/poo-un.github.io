@@ -1,4 +1,4 @@
-name: Deploy Hugo site to Pages
+name: Deploy Hugo site to GitHub Pages
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:  # Allows manual trigger from the Actions tab
 
 permissions:
-  contents: write  # Allow pushing built files to the repository
+  contents: write  # Allow pushing to the repository
 
 jobs:
   build:
@@ -17,6 +17,8 @@ jobs:
       # Checkout the code
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history to generate correct GitInfo
 
       # Set up Hugo
       - name: Setup Hugo
@@ -25,21 +27,14 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      # Build the site with Hugo, output to the docs folder
+      # Build the site with Hugo
       - name: Build with Hugo
-        run: hugo --minify -d docs  # Build the site into the docs directory
+        run: hugo --minify  # Builds the site into the public directory
 
-      # Commit the generated files in the docs directory back to the main branch
-      - name: Commit built files
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add docs
-          git commit -m "Deploy site to docs from GitHub Actions" || echo "No changes to commit"
-
-      # Push the built files to the main branch
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
+      # Deploy to the gh-pages branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          publish_dir: ./public  # Use the public directory for deployment
+          publish_branch: gh-pages  # Deploy to gh-pages branch
