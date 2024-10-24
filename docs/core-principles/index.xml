@@ -1,0 +1,258 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Universidad Nacional de Colombia POO hub – Principles of OOP</title><link>https://poo-un.github.io/docs/core-principles/</link><description>Recent content in Principles of OOP on Universidad Nacional de Colombia POO hub</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://poo-un.github.io/docs/core-principles/index.xml" rel="self" type="application/rss+xml"/><item><title>Encapsulation concept</title><link>https://poo-un.github.io/docs/core-principles/encapsulation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/core-principles/encapsulation/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#1E90FF">Encapsulation&lt;/font> is a fundamental principle of object-oriented programming (OOP) that restricts direct access to some of an object’s components and keeps data safe within objects. It is about bundling the data (&lt;font color="#FFA600">attributes&lt;/font>) and the &lt;font color="#F2613F">methods&lt;/font> that operate on that data into a single unit or class, while controlling access to the data through well-defined interfaces.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#1E90FF">Encapsulation&lt;/font> allows the internal state of an &lt;font color="#0047ab">object&lt;/font> be hidden from the outside world. External code cannot directly access or modify the &lt;font color="#FFA600">attributes&lt;/font> of an &lt;font color="#0047ab">object&lt;/font>; instead, interaction happens through &lt;font color="#F2613F">public methods&lt;/font>, which manage how data is accessed and changed. This principle protects the integrity of the object and enforces a controlled interaction.&lt;/p>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>To demonstrate this principle, let’s revisit the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class. We will use &lt;font color="#1E90FF">encapsulation&lt;/font> to restrict direct access to the &lt;font color="#FFA600">&lt;code>account attributes&lt;/code>&lt;/font> and allow interactions only through the &lt;font color="#F2613F">&lt;code>deposit()&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw()&lt;/code>&lt;/font> methods:&lt;/p>
+&lt;pre class="mermaid hx-mt-6">classDiagram
+class BankAccount {
+- Int accountNumber
+- Int balance
+- String accountHolder
++ deposit(amount)
++ withdraw(amount)
++ getBalance()
+} &lt;/pre>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+The &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font> are private 🔒, meaning they cannot be accessed or modified directly from outside the class.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+The &lt;font color="#F2613F">&lt;code>deposit()&lt;/code>&lt;/font>, &lt;font color="#F2613F">&lt;code>withdraw()&lt;/code>&lt;/font>, and &lt;font color="#F2613F">&lt;code>getBalance()&lt;/code>&lt;/font> methods are public 🔓 and allow controlled interaction with the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#1E90FF">Encapsulation&lt;/font> ensures that an object&amp;rsquo;s internal state is protected from unintended interference, making it easier to maintain and modify code. It also improves the security and robustness of a program.&lt;/p>
+&lt;h4>Why Encapsulation Matters?&lt;span class="hx-absolute -hx-mt-20" id="why-encapsulation-matters">&lt;/span>
+&lt;a href="#why-encapsulation-matters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;h5>Data Integrity&lt;span class="hx-absolute -hx-mt-20" id="data-integrity">&lt;/span>
+&lt;a href="#data-integrity" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>By restricting direct access to &lt;font color="#FFA600">attributes&lt;/font>, encapsulation helps ensure that the internal state of an object remains consistent. You can&amp;rsquo;t set invalid or unsafe values on the &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font> directly; instead, it’s modified through controlled &lt;font color="#F2613F">methods&lt;/font> that validate input.&lt;/p>
+&lt;h5>Modularity&lt;span class="hx-absolute -hx-mt-20" id="modularity">&lt;/span>
+&lt;a href="#modularity" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#1E90FF">Encapsulation&lt;/font> allows changes to the internal implementation of a class without affecting how other parts of the code interact with it. For example, you can change how &lt;font color="#F2613F">&lt;code>getBalance()&lt;/code>&lt;/font> calculates the balance, and the external code won’t need to be updated.&lt;/p>
+&lt;h5>Security&lt;span class="hx-absolute -hx-mt-20" id="security">&lt;/span>
+&lt;a href="#security" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>By keeping &lt;font color="#FFA600">private attributes&lt;/font> inaccessible from outside, &lt;font color="#1E90FF">encapsulation&lt;/font> enhances security. For example, it prevents unauthorized or unintended modifications to critical data, like changing an account’s balance directly.&lt;/p>
+&lt;h5>Ease of Maintenance&lt;span class="hx-absolute -hx-mt-20" id="ease-of-maintenance">&lt;/span>
+&lt;a href="#ease-of-maintenance" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#1E90FF">Encapsulation&lt;/font> makes the codebase easier to maintain. Changes to internal workings of the &lt;font color="#0047ab">object&lt;/font> can be made without breaking the rest of the system since the external interface remains the same.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;p>&lt;strong>Next Step:&lt;/strong>&lt;/p>
+&lt;p>Now that you’ve mastered how &lt;font color="#1E90FF">encapsulation&lt;/font> protects object data and provides controlled access, proceed to learn about &lt;font color="#32CD32">Abstraction&lt;/font>, which focuses on simplifying complex systems by hiding unnecessary details.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Abstraction concept</title><link>https://poo-un.github.io/docs/core-principles/abstraction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/core-principles/abstraction/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#32CD32">Abstraction&lt;/font> is a core principle of object-oriented programming (OOP) that focuses on hiding complex implementation details and exposing only the essential features of an &lt;font color="#0047ab">object&lt;/font>. By using abstraction, developers can simplify complex systems by breaking them down into more manageable parts.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>In OOP, &lt;font color="#32CD32">Abstraction&lt;/font> enables you to represent essential aspects of an &lt;font color="#0047ab">object&lt;/font> without exposing its internal workings. It allows for designing classes that can interact with other parts of the system while hiding unnecessary complexities.&lt;/p>
+&lt;p>For example, in a banking application, you might need to interact with &lt;font color="#007bff">bank accounts&lt;/font>, but you don’t need to know the complex algorithms that calculate interest or handle transactions. Instead, you only care about the essential methods and attributes like &lt;font color="#F2613F">&lt;code>deposit()&lt;/code>&lt;/font>, &lt;font color="#F2613F">&lt;code>withdraw()&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>.&lt;/p>
+&lt;h4>Bank Account Example&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>Let’s &lt;font color="#32CD32">abstract&lt;/font> the core functionality of a bank account by defining a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class that hides the internal logic while exposing essential &lt;font color="#F2613F">methods&lt;/font> for interacting with it.&lt;/p>
+&lt;pre class="mermaid hx-mt-6">classDiagram
+class BankAccount {
+- Int accountNumber
+- Int balance
+- String accountHolder
++ deposit(amount)
++ withdraw(amount)
++ getBalance()
+} &lt;/pre>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+Attributes (&lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font>) are &lt;code>private&lt;/code> 🔒
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>These represent the internal data of the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>. By keeping these attributes &lt;code>private&lt;/code>, we ensure that they cannot be accessed or modified directly by external code.
+For example, without abstraction, an external user could directly modify attributes like &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font> to any value, even negative amounts.&lt;/p>
+&lt;p>&lt;font color="#32CD32">Abstraction&lt;/font> protects this data, ensuring that changes are made through controlled methods like &lt;font color="#F2613F">&lt;code>deposit(amount)&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw(amount)&lt;/code>&lt;/font>.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+Methods like &lt;font color="#F2613F">&lt;code>deposit(amount)&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw(amount)&lt;/code>&lt;/font> are &lt;code>public&lt;/code> 🔓
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>These methods provide an interface to interact with the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> object. Through abstraction, users can perform essential operations without needing to know how these methods are implemented internally.&lt;/p>
+&lt;h4>Why Abstraction Matters?&lt;span class="hx-absolute -hx-mt-20" id="why-abstraction-matters">&lt;/span>
+&lt;a href="#why-abstraction-matters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;h5>Separation of Concerns&lt;span class="hx-absolute -hx-mt-20" id="separation-of-concerns">&lt;/span>
+&lt;a href="#separation-of-concerns" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#32CD32">Abstraction&lt;/font> ensures that each part of the system focuses on a specific task. The &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class manages the account data internally, while external code only interacts with it through public methods. This separation makes the system easier to understand, maintain, and extend.&lt;/p>
+&lt;h5>Security&lt;span class="hx-absolute -hx-mt-20" id="security">&lt;/span>
+&lt;a href="#security" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>By hiding the internal state of the object, we prevent unauthorized or unintended changes. For instance, without abstraction, a user could directly change the &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font> of an account. &lt;font color="#32CD32">Abstraction&lt;/font> ensures that such sensitive data is protected, allowing only authorized interactions through the defined methods.&lt;/p>
+&lt;h5>Simplified Interface&lt;span class="hx-absolute -hx-mt-20" id="simplified-interface">&lt;/span>
+&lt;a href="#simplified-interface" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>Users of the class only need to focus on what’s essential for them. A person using the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class doesn&amp;rsquo;t care about how the balance is stored in memory or how funds are transferred; they only care about interacting with the interface provided—depositing, withdrawing, and checking the balance.&lt;/p>
+&lt;p>Through &lt;font color="#32CD32">Abstraction&lt;/font>, we define a simple interface for interacting with objects, hiding unnecessary details while maintaining control over how data is accessed and modified. This principle enhances security, improves code maintainability, and ensures a cleaner, more understandable interface.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;p>&lt;strong>Next Step:&lt;/strong>&lt;/p>
+&lt;p>Now that you’ve seen how &lt;font color="#32CD32">abstraction&lt;/font> simplifies object interactions, explore &lt;font color="#FF6347">Inheritance&lt;/font> , which allows a class (called a child or subclass) to inherit properties and behaviors from another class (called a parent or superclass).&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Inheritance concept</title><link>https://poo-un.github.io/docs/core-principles/inheritance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/core-principles/inheritance/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#FF6347">Inheritance&lt;/font> is a fundamental principle of object-oriented programming (OOP) that allows a class (called a child or subclass) to inherit properties and behaviors from another class (called a parent or superclass). This enables code reusability, as common &lt;font color="#FFA600">attributes&lt;/font> and &lt;font color="#F2613F">methods&lt;/font> can be defined in the parent class and inherited by its subclasses.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#FF6347">Inheritance&lt;/font> promotes the reusability of code by allowing &lt;font color="#007bff">classes&lt;/font> to derive common characteristics from a base class. It enables the creation of hierarchical relationships between &lt;font color="#007bff">classes&lt;/font>, where a child class can inherit and extend the functionality of its parent class. Subclasses can override or extend inherited methods, adding flexibility and specificity.&lt;/p>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>To illustrate &lt;font color="#FF6347">Inheritance&lt;/font>, let’s extend our &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class to create specialized types of accounts. For instance, we can create a &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> class that &lt;font color="#FF6347">inherits&lt;/font> from &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> and adds a specific interest rate.&lt;/p>
+&lt;pre class="mermaid hx-mt-6">classDiagram
+class BankAccount {
+- Int accountNumber
+- Int balance
+- String accountHolder
++ deposit(amount)
++ withdraw(amount)
++ getBalance()
+}
+class SavingsAccount {
+- Float interestRate
++ applyInterest()
+}
+BankAccount &lt;|-- SavingsAccount&lt;/pre>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> provides shared &lt;font color="#FFA600">attributes&lt;/font> like &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font>, along with shared &lt;font color="#F2613F">methods&lt;/font> like &lt;font color="#F2613F">&lt;code>deposit()&lt;/code>&lt;/font>, &lt;font color="#F2613F">&lt;code>withdraw()&lt;/code>&lt;/font>, and &lt;font color="#F2613F">&lt;code>getBalance()&lt;/code>&lt;/font>.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> inherits all the properties and behaviors of &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> but adds its own &lt;font color="#FFA600">&lt;code>interestRate&lt;/code>&lt;/font>🔒 attribute and the &lt;font color="#F2613F">&lt;code>applyInterest()&lt;/code>&lt;/font>🔓 method.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>This example illustrates how &lt;font color="#FF6347">Inheritance&lt;/font> allows new &lt;font color="#007bff">classes&lt;/font> to build on top of existing ones. The &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> class can leverage all the functionality of &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> while introducing its own features like calculating interest. By sharing common code between the parent and child classes, inheritance reduces redundancy and promotes a cleaner design.&lt;/p>
+&lt;h4>Why Inheritance Matters?&lt;span class="hx-absolute -hx-mt-20" id="why-inheritance-matters">&lt;/span>
+&lt;a href="#why-inheritance-matters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;h5>Code Reusability&lt;span class="hx-absolute -hx-mt-20" id="code-reusability">&lt;/span>
+&lt;a href="#code-reusability" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#FF6347">Inheritance&lt;/font> helps avoid duplication by allowing multiple subclasses to inherit common functionality from a single parent class. This way, shared &lt;font color="#FFA600">attributes&lt;/font> and &lt;font color="#F2613F">methods&lt;/font> can be reused without having to rewrite them in each subclass.&lt;/p>
+&lt;h5>Extensibility&lt;span class="hx-absolute -hx-mt-20" id="extensibility">&lt;/span>
+&lt;a href="#extensibility" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#FF6347">Inheritance&lt;/font> makes it easy to extend functionality. You can create new &lt;font color="#007bff">classes&lt;/font> based on existing ones, introducing specialized behaviors while maintaining the foundational code from the parent class.&lt;/p>
+&lt;h5>Maintainability&lt;span class="hx-absolute -hx-mt-20" id="maintainability">&lt;/span>
+&lt;a href="#maintainability" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>By organizing code into parent-child class relationships, &lt;font color="#FF6347">Inheritance&lt;/font> simplifies maintenance. Changes in the parent class automatically propagate to all subclasses, ensuring consistency across your application.&lt;/p>
+&lt;h5>Hierarchical Organization&lt;span class="hx-absolute -hx-mt-20" id="hierarchical-organization">&lt;/span>
+&lt;a href="#hierarchical-organization" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#FF6347">Inheritance&lt;/font> naturally supports the creation of a class hierarchy. This makes it easier to understand and structure complex systems, particularly when there are multiple related &lt;font color="#007bff">classes&lt;/font>.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;p>&lt;strong>Next Step:&lt;/strong>&lt;/p>
+&lt;p>Now that you’ve learned how &lt;font color="#FF6347">Inheritance&lt;/font> promotes code reusability and extensibility, the next step is to explore &lt;font color="#8A2BE2">Polymorphism&lt;/font>, which allows objects of different classes to be treated uniformly.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Polymorphism concept</title><link>https://poo-un.github.io/docs/core-principles/polymorphism/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/core-principles/polymorphism/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#8A2BE2">Polymorphism&lt;/font> is a fundamental principle in OOP that allows objects of different classes to be treated as objects of a common base class. It enables one interface to be used for different data types or classes, simplifying code and making it more flexible.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#8A2BE2">Polymorphism&lt;/font> allows for methods to behave differently based on the object that invokes them. It enables multiple classes to implement methods that share the same name but provide different functionalities depending on the specific class.&lt;/p>
+&lt;p>For example, a banking system might have different types of accounts such as &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> and &lt;font color="#007bff">&lt;code>CheckingAccount&lt;/code>&lt;/font>. Both types of accounts could share a common method like &lt;font color="#F2613F">&lt;code>applyInterest()&lt;/code> &lt;/font>, but each would calculate interest in a different way.&lt;/p>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>Imagine we have a base class, &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>, and a subclass, &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font>. The method &lt;font color="#F2613F">&lt;code>applyInterest()&lt;/code>&lt;/font> behaves differently in the &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> class compared to a more generic method in &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>:&lt;/p>
+&lt;pre class="mermaid hx-mt-6">classDiagram
+class BankAccount {
++ deposit(amount)
++ withdraw(amount)
++ getBalance()
+}
+class SavingsAccount {
++ Float interestRate
++ applyInterest()
++ withdraw(amount)
+}
+BankAccount &lt;|-- SavingsAccount&lt;/pre>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;p>In the diagram:&lt;/p>
+&lt;p>The method &lt;font color="#F2613F">&lt;code>withdraw(amount)&lt;/code>&lt;/font> is &lt;font color="#8A2BE2">overridden&lt;/font> in the &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> class to account for savings-specific rules (like a fee or limit).
+Methods within the same class that share the same name but have different parameters.&lt;/p>
+&lt;p>The method &lt;font color="#F2613F">&lt;code>applyInterest()&lt;/code>&lt;/font> adds behavior specific to savings accounts, demonstrating &lt;font color="#8A2BE2">method overloading&lt;/font> because a subclass is providing specific implementation of a method already defined in its superclass.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#8A2BE2">Polymorphism&lt;/font> allows &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> and &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> to share similar methods, but execute them differently depending on the object’s type. For example, both classes have a &lt;font color="#F2613F">&lt;code>withdraw(amount)&lt;/code>&lt;/font> method, but the behavior differs depending on whether the object is a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> or a &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font>.&lt;/p>
+&lt;h4>Why Polymorphism Matters?&lt;span class="hx-absolute -hx-mt-20" id="why-polymorphism-matters">&lt;/span>
+&lt;a href="#why-polymorphism-matters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;h5>Code Reusability&lt;span class="hx-absolute -hx-mt-20" id="code-reusability">&lt;/span>
+&lt;a href="#code-reusability" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#8A2BE2">Polymorphism&lt;/font> allows a base class like &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> to define general behavior, while subclasses like &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> can build on and modify that behavior. This makes it easier to extend the system without rewriting code.&lt;/p>
+&lt;h5>Maintainability&lt;span class="hx-absolute -hx-mt-20" id="maintainability">&lt;/span>
+&lt;a href="#maintainability" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#8A2BE2">Polymorphism&lt;/font> simplifies code maintenance. If you need to change the behavior of a method for a particular &lt;font color="#007bff">class&lt;/font>, you can override it in the subclass, without altering the base class or other subclasses.&lt;/p>
+&lt;h5>Dynamic Behavior&lt;span class="hx-absolute -hx-mt-20" id="dynamic-behavior">&lt;/span>
+&lt;a href="#dynamic-behavior" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>At runtime, the system can decide which &lt;font color="#F2613F">method&lt;/font> to invoke depending on the object&amp;rsquo;s type, leading to more flexible and dynamic code.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;p>&lt;strong>Next Step:&lt;/strong>&lt;/p>
+&lt;p>Now that you’ve mastered all four core principles of object-oriented programming (OOP), it’s time to explore the &lt;a href="https://poo-un.github.io/content/methodologies/_index.md" >Methodologies&lt;/a> section, where you can dive into different learning paths. These methodologies provide various ways to apply the OOP concepts you’ve learned based on different teaching styles and use cases.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h3>Quiz&lt;span class="hx-absolute -hx-mt-20" id="quiz">&lt;/span>
+&lt;a href="#quiz" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;hr>
+&lt;form id="quiz">
+&lt;label>Question 1: What is OOP?&lt;/label>&lt;br>
+&lt;input type="radio" name="q1" value="a"> A programming paradigm&lt;br>
+&lt;input type="radio" name="q1" value="b"> A database model&lt;br>
+&lt;input type="submit" value="Submit">
+&lt;/form>
+&lt;div id="result">&lt;/div>
+&lt;script>
+document.getElementById('quiz').onsubmit = function(e) {
+e.preventDefault();
+const answer = document.querySelector('input[name="q1"]:checked').value;
+document.getElementById('result').innerText = answer === 'a' ? 'Correct!' : 'Try again!';
+};
+&lt;/script></description></item></channel></rss>

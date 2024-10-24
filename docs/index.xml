@@ -1,0 +1,783 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Universidad Nacional de Colombia POO hub – Object-Oriented Programming</title><link>https://poo-un.github.io/docs/</link><description>Recent content in Object-Oriented Programming on Universidad Nacional de Colombia POO hub</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://poo-un.github.io/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Class concept</title><link>https://poo-un.github.io/docs/basic-concepts/class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/basic-concepts/class/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+A class is a user-defined data type. A class is a blueprint for creating objects that share common properties and behaviors.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>A &lt;font color="#007bff">class&lt;/font> can be thought of as a blueprint that defines the structure of objects in a program. It&amp;rsquo;s like a mold from which individual objects are created, each with its own attributes and behaviors.&lt;/p>
+&lt;p>Let&amp;rsquo;s consider the concept of a class using the example of a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>.&lt;/p>
+&lt;p>A &lt;font color="#007bff">class&lt;/font> is like a blueprint or template for creating objects. In our example, the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class represents the blueprint for creating individual bank account objects.&lt;/p>
+&lt;pre class="mermaid hx-mt-6">classDiagram
+class BankAccount {
+Int accountNumber
+Int Balance
+String accountHolder
+deposit(amount)
+withdraw(amount)
+} &lt;/pre>&lt;div style="display: flex; justify-content: center;">
+&lt;div class="mermaid">
+classDiagram
+class BankAccount {
+Int accountNumber
+Int Balance
+String accountHolder
+deposit(amount)
+withdraw(amount)
+}
+&lt;/div>
+&lt;/div>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">BankAccount&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber &lt;/font>: Int &lt;br/> &lt;font color="#FFA600">balance &lt;/font>: Int&lt;br/> &lt;font color="#FFA600">accountHolder &lt;/font> : String&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>Attributes:&lt;span class="hx-absolute -hx-mt-20" id="attributes">&lt;/span>
+&lt;a href="#attributes" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
+&lt;li>&lt;font color="#FFA600">Attributes&lt;/font> are characteristics or properties that describe the objects created from the class. For instance, in the case of a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>, attributes could include &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font>.&lt;/li>
+&lt;/ul>
+&lt;h4>Methods:&lt;span class="hx-absolute -hx-mt-20" id="methods">&lt;/span>
+&lt;a href="#methods" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
+&lt;li>&lt;font color="#F2613F">Methods&lt;/font> are functions that define the behavior of the objects created from the class. In the context of a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>, methods could include operations like &lt;font color="#F2613F">&lt;code>deposit&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw&lt;/code>&lt;/font>, which specify how money can be added to or withdrawn from an account.&lt;/li>
+&lt;/ul>
+&lt;p>This class blueprint defines the structure for creating &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> objects. Each object instantiated from this class inherits &lt;font color="#FFA600">attributes&lt;/font> such as &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font> and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font>. Additionally, the &lt;font color="#F2613F">methods&lt;/font> such as &lt;font color="#F2613F">&lt;code>deposit()&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw()&lt;/code>&lt;/font>, enable the objects to perform operations like adding or withdrawing money.&lt;/p></description></item><item><title>Encapsulation concept</title><link>https://poo-un.github.io/docs/core-principles/encapsulation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/core-principles/encapsulation/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#1E90FF">Encapsulation&lt;/font> is a fundamental principle of object-oriented programming (OOP) that restricts direct access to some of an object’s components and keeps data safe within objects. It is about bundling the data (&lt;font color="#FFA600">attributes&lt;/font>) and the &lt;font color="#F2613F">methods&lt;/font> that operate on that data into a single unit or class, while controlling access to the data through well-defined interfaces.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#1E90FF">Encapsulation&lt;/font> allows the internal state of an &lt;font color="#0047ab">object&lt;/font> be hidden from the outside world. External code cannot directly access or modify the &lt;font color="#FFA600">attributes&lt;/font> of an &lt;font color="#0047ab">object&lt;/font>; instead, interaction happens through &lt;font color="#F2613F">public methods&lt;/font>, which manage how data is accessed and changed. This principle protects the integrity of the object and enforces a controlled interaction.&lt;/p>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>To demonstrate this principle, let’s revisit the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class. We will use &lt;font color="#1E90FF">encapsulation&lt;/font> to restrict direct access to the &lt;font color="#FFA600">&lt;code>account attributes&lt;/code>&lt;/font> and allow interactions only through the &lt;font color="#F2613F">&lt;code>deposit()&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw()&lt;/code>&lt;/font> methods:&lt;/p>
+&lt;pre class="mermaid hx-mt-6">classDiagram
+class BankAccount {
+- Int accountNumber
+- Int balance
+- String accountHolder
++ deposit(amount)
++ withdraw(amount)
++ getBalance()
+} &lt;/pre>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+The &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font> are private 🔒, meaning they cannot be accessed or modified directly from outside the class.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+The &lt;font color="#F2613F">&lt;code>deposit()&lt;/code>&lt;/font>, &lt;font color="#F2613F">&lt;code>withdraw()&lt;/code>&lt;/font>, and &lt;font color="#F2613F">&lt;code>getBalance()&lt;/code>&lt;/font> methods are public 🔓 and allow controlled interaction with the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#1E90FF">Encapsulation&lt;/font> ensures that an object&amp;rsquo;s internal state is protected from unintended interference, making it easier to maintain and modify code. It also improves the security and robustness of a program.&lt;/p>
+&lt;h4>Why Encapsulation Matters?&lt;span class="hx-absolute -hx-mt-20" id="why-encapsulation-matters">&lt;/span>
+&lt;a href="#why-encapsulation-matters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;h5>Data Integrity&lt;span class="hx-absolute -hx-mt-20" id="data-integrity">&lt;/span>
+&lt;a href="#data-integrity" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>By restricting direct access to &lt;font color="#FFA600">attributes&lt;/font>, encapsulation helps ensure that the internal state of an object remains consistent. You can&amp;rsquo;t set invalid or unsafe values on the &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font> directly; instead, it’s modified through controlled &lt;font color="#F2613F">methods&lt;/font> that validate input.&lt;/p>
+&lt;h5>Modularity&lt;span class="hx-absolute -hx-mt-20" id="modularity">&lt;/span>
+&lt;a href="#modularity" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#1E90FF">Encapsulation&lt;/font> allows changes to the internal implementation of a class without affecting how other parts of the code interact with it. For example, you can change how &lt;font color="#F2613F">&lt;code>getBalance()&lt;/code>&lt;/font> calculates the balance, and the external code won’t need to be updated.&lt;/p>
+&lt;h5>Security&lt;span class="hx-absolute -hx-mt-20" id="security">&lt;/span>
+&lt;a href="#security" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>By keeping &lt;font color="#FFA600">private attributes&lt;/font> inaccessible from outside, &lt;font color="#1E90FF">encapsulation&lt;/font> enhances security. For example, it prevents unauthorized or unintended modifications to critical data, like changing an account’s balance directly.&lt;/p>
+&lt;h5>Ease of Maintenance&lt;span class="hx-absolute -hx-mt-20" id="ease-of-maintenance">&lt;/span>
+&lt;a href="#ease-of-maintenance" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#1E90FF">Encapsulation&lt;/font> makes the codebase easier to maintain. Changes to internal workings of the &lt;font color="#0047ab">object&lt;/font> can be made without breaking the rest of the system since the external interface remains the same.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;p>&lt;strong>Next Step:&lt;/strong>&lt;/p>
+&lt;p>Now that you’ve mastered how &lt;font color="#1E90FF">encapsulation&lt;/font> protects object data and provides controlled access, proceed to learn about &lt;font color="#32CD32">Abstraction&lt;/font>, which focuses on simplifying complex systems by hiding unnecessary details.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>First Javascript exercise</title><link>https://poo-un.github.io/methodologies/javascript-practice/firstjs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/javascript-practice/firstjs/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+🎖️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+Write a JavaScript program to create a class called &amp;ldquo;Person&amp;rdquo; with properties for name, age and country. Include a method to display the person&amp;rsquo;s details. Create two instances of the &amp;lsquo;Person&amp;rsquo; class and display their details.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;p>Plain code approach&lt;/p>
+&lt;div class="hextra-scrollbar hx-overflow-x-auto hx-overflow-y-hidden hx-overscroll-x-contain">
+&lt;div class="hx-mt-4 hx-flex hx-w-max hx-min-w-full hx-border-b hx-border-gray-200 hx-pb-px dark:hx-border-neutral-800">&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-0" aria-selected="true" tabindex="0" data-state="selected">Explanation&lt;/button>&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-1">Solution&lt;/button>&lt;/div>
+&lt;/div>
+&lt;div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-0"
+role="tabpanel" tabindex="0" data-state="selected" >In the above exercise we create a &amp;ldquo;Person&amp;rdquo; class with properties for name, age, and country. It includes a method to display the person&amp;rsquo;s details.&lt;br>
+Finally it creates two instances of the Person class and displays their details using the displayDetails() method.&lt;/div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-1"
+role="tabpanel">&lt;p>&lt;strong>Solution&lt;/strong>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">class&lt;/span> &lt;span class="nx">Person&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">constructor&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">name&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">age&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">country&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">name&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">age&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">age&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">country&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">country&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">displayDetails&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sb">`Name: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">name&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sb">`Age: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">age&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sb">`Country: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">country&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Create instances of the Person class
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">person1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Person&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Francisca Rohan&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">25&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;USA&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">person2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Person&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Raimond Aruna&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">30&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Netherlands&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Display details of person1
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Person-1 Details:&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">person1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">displayDetails&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Display details of person2
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;\nPerson-2 Details:&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">person2&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">displayDetails&lt;/span>&lt;span class="p">();&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Sample output&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">&amp;#34;Person-1 Details:&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;Name: Francisca Rohan&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;Age: 25&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;Country: USA&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Person-2 Details:&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;Name: Raimond Aruna&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;Age: 30&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;Country: Netherlands&amp;#34;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;p>Write your solution below&lt;/p>
+&lt;script
+data-slug-hash="jYVvao"
+data-user="your_username"
+data-height="600"
+data-default-tab="html"
+data-theme-id="8862"
+data-editable="true"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>
+&lt;p>Solution in Codepen
+&lt;script
+data-slug-hash="xxQOxOq"
+data-user="your_username"
+data-height="600"
+data-default-tab="html"
+data-theme-id="8862"
+data-editable="true"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>&lt;/p></description></item><item><title>First Python exercise</title><link>https://poo-un.github.io/methodologies/python-practice/firstpython/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/python-practice/firstpython/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+🎖️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+Write a Python program to create a class representing a Circle. Include methods to calculate its area and perimeter.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;p>Plain code approach&lt;/p>
+&lt;div class="hextra-scrollbar hx-overflow-x-auto hx-overflow-y-hidden hx-overscroll-x-contain">
+&lt;div class="hx-mt-4 hx-flex hx-w-max hx-min-w-full hx-border-b hx-border-gray-200 hx-pb-px dark:hx-border-neutral-800">&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-0" aria-selected="true" tabindex="0" data-state="selected">Explanation&lt;/button>&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-1">Solution&lt;/button>&lt;/div>
+&lt;/div>
+&lt;div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-0"
+role="tabpanel" tabindex="0" data-state="selected" >In the above exercise we create a &amp;ldquo;Person&amp;rdquo; class with properties for name, age, and country. It includes a method to display the person&amp;rsquo;s details.&lt;br>
+Finally it creates two instances of the Person class and displays their details using the displayDetails() method.&lt;/div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-1"
+role="tabpanel">&lt;p>&lt;strong>Solution&lt;/strong>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Import the math module to access mathematical functions like pi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">math&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Define a class called Circle to represent a circle&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Circle&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Initialize the Circle object with a given radius&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="fm">__init__&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">radius&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">radius&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">radius&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Calculate and return the area of the circle using the formula: π * r^2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">calculate_circle_area&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">math&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pi&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">radius&lt;/span>&lt;span class="o">**&lt;/span>&lt;span class="mi">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Calculate and return the perimeter (circumference) of the circle using the formula: 2π * r&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">calculate_circle_perimeter&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">math&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pi&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">radius&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Example usage&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Prompt the user to input the radius of the circle and convert it to a floating-point number&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">radius&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">float&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">input&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Input the radius of the circle: &amp;#34;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Create a Circle object with the provided radius&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">circle&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Circle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">radius&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Calculate the area of the circle using the calculate_circle_area method&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">area&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">circle&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">calculate_circle_area&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Calculate the perimeter of the circle using the calculate_circle_perimeter method&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">perimeter&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">circle&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">calculate_circle_perimeter&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Display the calculated area and perimeter of the circle&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Area of the circle:&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">area&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Perimeter of the circle:&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">perimeter&lt;/span>&lt;span class="p">)&lt;/span> &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Sample output&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">Input the radius of the circle: 4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Area of the circle: 50.26548245743669
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Perimeter of the circle: 25.132741228718345&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;hr></description></item><item><title>Abstraction concept</title><link>https://poo-un.github.io/docs/core-principles/abstraction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/core-principles/abstraction/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#32CD32">Abstraction&lt;/font> is a core principle of object-oriented programming (OOP) that focuses on hiding complex implementation details and exposing only the essential features of an &lt;font color="#0047ab">object&lt;/font>. By using abstraction, developers can simplify complex systems by breaking them down into more manageable parts.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>In OOP, &lt;font color="#32CD32">Abstraction&lt;/font> enables you to represent essential aspects of an &lt;font color="#0047ab">object&lt;/font> without exposing its internal workings. It allows for designing classes that can interact with other parts of the system while hiding unnecessary complexities.&lt;/p>
+&lt;p>For example, in a banking application, you might need to interact with &lt;font color="#007bff">bank accounts&lt;/font>, but you don’t need to know the complex algorithms that calculate interest or handle transactions. Instead, you only care about the essential methods and attributes like &lt;font color="#F2613F">&lt;code>deposit()&lt;/code>&lt;/font>, &lt;font color="#F2613F">&lt;code>withdraw()&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>.&lt;/p>
+&lt;h4>Bank Account Example&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>Let’s &lt;font color="#32CD32">abstract&lt;/font> the core functionality of a bank account by defining a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class that hides the internal logic while exposing essential &lt;font color="#F2613F">methods&lt;/font> for interacting with it.&lt;/p>
+&lt;pre class="mermaid hx-mt-6">classDiagram
+class BankAccount {
+- Int accountNumber
+- Int balance
+- String accountHolder
++ deposit(amount)
++ withdraw(amount)
++ getBalance()
+} &lt;/pre>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+Attributes (&lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font>) are &lt;code>private&lt;/code> 🔒
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>These represent the internal data of the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>. By keeping these attributes &lt;code>private&lt;/code>, we ensure that they cannot be accessed or modified directly by external code.
+For example, without abstraction, an external user could directly modify attributes like &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font> to any value, even negative amounts.&lt;/p>
+&lt;p>&lt;font color="#32CD32">Abstraction&lt;/font> protects this data, ensuring that changes are made through controlled methods like &lt;font color="#F2613F">&lt;code>deposit(amount)&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw(amount)&lt;/code>&lt;/font>.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+Methods like &lt;font color="#F2613F">&lt;code>deposit(amount)&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw(amount)&lt;/code>&lt;/font> are &lt;code>public&lt;/code> 🔓
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>These methods provide an interface to interact with the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> object. Through abstraction, users can perform essential operations without needing to know how these methods are implemented internally.&lt;/p>
+&lt;h4>Why Abstraction Matters?&lt;span class="hx-absolute -hx-mt-20" id="why-abstraction-matters">&lt;/span>
+&lt;a href="#why-abstraction-matters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;h5>Separation of Concerns&lt;span class="hx-absolute -hx-mt-20" id="separation-of-concerns">&lt;/span>
+&lt;a href="#separation-of-concerns" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#32CD32">Abstraction&lt;/font> ensures that each part of the system focuses on a specific task. The &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class manages the account data internally, while external code only interacts with it through public methods. This separation makes the system easier to understand, maintain, and extend.&lt;/p>
+&lt;h5>Security&lt;span class="hx-absolute -hx-mt-20" id="security">&lt;/span>
+&lt;a href="#security" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>By hiding the internal state of the object, we prevent unauthorized or unintended changes. For instance, without abstraction, a user could directly change the &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font> of an account. &lt;font color="#32CD32">Abstraction&lt;/font> ensures that such sensitive data is protected, allowing only authorized interactions through the defined methods.&lt;/p>
+&lt;h5>Simplified Interface&lt;span class="hx-absolute -hx-mt-20" id="simplified-interface">&lt;/span>
+&lt;a href="#simplified-interface" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>Users of the class only need to focus on what’s essential for them. A person using the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class doesn&amp;rsquo;t care about how the balance is stored in memory or how funds are transferred; they only care about interacting with the interface provided—depositing, withdrawing, and checking the balance.&lt;/p>
+&lt;p>Through &lt;font color="#32CD32">Abstraction&lt;/font>, we define a simple interface for interacting with objects, hiding unnecessary details while maintaining control over how data is accessed and modified. This principle enhances security, improves code maintainability, and ensures a cleaner, more understandable interface.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;p>&lt;strong>Next Step:&lt;/strong>&lt;/p>
+&lt;p>Now that you’ve seen how &lt;font color="#32CD32">abstraction&lt;/font> simplifies object interactions, explore &lt;font color="#FF6347">Inheritance&lt;/font> , which allows a class (called a child or subclass) to inherit properties and behaviors from another class (called a parent or superclass).&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Second Javascript exercise</title><link>https://poo-un.github.io/methodologies/javascript-practice/secondjs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/javascript-practice/secondjs/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+🎖️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+Write a JavaScript program to create a class called &amp;lsquo;Rectangle&amp;rsquo; with properties for width and height. Include two methods to calculate rectangle area and perimeter. Create an instance of the &amp;lsquo;Rectangle&amp;rsquo; class and calculate its area and perimeter.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;div class="hextra-scrollbar hx-overflow-x-auto hx-overflow-y-hidden hx-overscroll-x-contain">
+&lt;div class="hx-mt-4 hx-flex hx-w-max hx-min-w-full hx-border-b hx-border-gray-200 hx-pb-px dark:hx-border-neutral-800">&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-0" aria-selected="true" tabindex="0" data-state="selected">Explanation&lt;/button>&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-1">Solution&lt;/button>&lt;/div>
+&lt;/div>
+&lt;div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-0"
+role="tabpanel" tabindex="0" data-state="selected" >In the above exercise we create a &amp;ldquo;Person&amp;rdquo; class with properties for name, age, and country. It includes a method to display the person&amp;rsquo;s details.&lt;br>
+Finally it creates two instances of the Person class and displays their details using the displayDetails() method.&lt;/div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-1"
+role="tabpanel">&lt;p>&lt;strong>Solution&lt;/strong>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">class&lt;/span> &lt;span class="nx">Rectangle&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">constructor&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">width&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">height&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">width&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">width&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">height&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">calculateArea&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">width&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">height&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">calculatePerimeter&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">width&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">height&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Create an instance of the Rectangle class
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">rectangle&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Rectangle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">12&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Calculate area and perimeter of the rectangle
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">area&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">rectangle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">calculateArea&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">perimeter&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">rectangle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">calculatePerimeter&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Display the results
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sb">`Rectangle Area: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">area&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sb">`Rectangle Perimeter: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">perimeter&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">);&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Sample output&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">&amp;#34;Rectangle Area: 120&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;Rectangle Perimeter: 44&amp;#34;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;p>Write your solution below&lt;/p>
+&lt;script
+data-slug-hash="jYVvao"
+data-user="your_username"
+data-height="600"
+data-default-tab="html"
+data-theme-id="8862"
+data-editable="true"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>
+&lt;p>Solution in Codepen
+&lt;script
+data-slug-hash="yLQJLay"
+data-user="your_username"
+data-height="600"
+data-default-tab="html"
+data-theme-id="8862"
+data-editable="true"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>&lt;/p></description></item><item><title>Second Python exercise</title><link>https://poo-un.github.io/methodologies/python-practice/secondpython/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/python-practice/secondpython/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+🎖️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+Here it goes the second python exercise
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;hr></description></item><item><title>Object concept</title><link>https://poo-un.github.io/docs/basic-concepts/object/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/basic-concepts/object/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+In object-oriented programming (OOP), an &lt;font color="#0047ab">object&lt;/font> is an instance of a &lt;font color="#007bff">class&lt;/font>, encapsulating attributes and behaviors to model real-world entities.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>Remember that we have a class called &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>. This class represents a bank account, and it has &lt;font color="#F2613F">methods&lt;/font> to perform banking operations like depositing money and withdrawing money.&lt;/p>
+&lt;p>In our example, an object is an instance of the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class. Each individual bank account created from the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class is an object.&lt;/p>
+&lt;p>These objects, such as &lt;font color="#007bff">&lt;code>account 1&lt;/code>&lt;/font> and &lt;font color="#007bff">&lt;code>account 2&lt;/code>&lt;/font>, inherit &lt;font color="#FFA600">attributes&lt;/font> and &lt;font color="#F2613F">methods&lt;/font> from the class, but hold their own unique data.&lt;/p>
+&lt;h4>Attributes:&lt;span class="hx-absolute -hx-mt-20" id="attributes">&lt;/span>
+&lt;a href="#attributes" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
+&lt;li>Each bank account object has its own set of attributes that describe its specific state. For instance, each bank account object might have attributes like &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font>.&lt;/li>
+&lt;/ul>
+&lt;h4>Methods:&lt;span class="hx-absolute -hx-mt-20" id="methods">&lt;/span>
+&lt;a href="#methods" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
+&lt;li>Objects have access to the methods defined by their class. These methods define the behavior or actions that objects can perform. For example, each bank account object can use methods like &lt;font color="#F2613F">&lt;code>deposit&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw&lt;/code>&lt;/font> to manage its funds.&lt;/li>
+&lt;/ul>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>Suppose we create two bank account objects from the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">Account 1&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">Account 2&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 123456 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 500 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: John Doe&lt;/td>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 789012 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 1000 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: Jane Smith&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Each bank account object represents a distinct bank account with its own unique attributes and behaviors. For example, &lt;font color="#007bff">&lt;code>account 1&lt;/code>&lt;/font> and &lt;font color="#007bff">&lt;code>account 2&lt;/code>&lt;/font> have different &lt;font color="#FFA600">&lt;code>accountNumbers&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balances&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolders&lt;/code>&lt;/font>. They can each independently use the &lt;font color="#F2613F">&lt;code>deposit&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw&lt;/code>&lt;/font> methods to manage their funds.&lt;/p></description></item><item><title>Attributes concept</title><link>https://poo-un.github.io/docs/basic-concepts/attributes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/basic-concepts/attributes/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+In object-oriented programming (OOP), an &lt;font color="#FFA600">attribute&lt;/font> (also known as a property or field) is a characteristic or property of an object. It represents the data that an object holds and defines its state.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#FFA600">Attributes&lt;/font> are defined within a &lt;font color="#007bff">class&lt;/font>, and each object created from that class has its own unique values for those attributes. For example, in a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class, attributes might include the &lt;font color="#FFA600">accountNumber&lt;/font>, &lt;font color="#FFA600">balance&lt;/font>, and &lt;font color="#FFA600">accountHolder&lt;/font>.&lt;/p>
+&lt;p>Let&amp;rsquo;s delve into the concept of attributes considering the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class. Each bank account object created from this class will have its own set of attributes:&lt;/p>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>Consider the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class. Each bank account object created from this class will have its own set of attributes:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">BankAccount&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: Int &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: Int &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: String&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Suppose we create two &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> objects:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">account1&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">account2&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 123456 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 500 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: John Doe&lt;/td>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 789012 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 1000 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: Jane Smith&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>In this example, we see that although both &lt;font color="#007bff">&lt;code>account1&lt;/code>&lt;/font> and &lt;font color="#007bff">&lt;code>account2&lt;/code>&lt;/font> are instances of the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class, each object has its own unique attribute values.&lt;/p>
+&lt;p>Each object of the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class shares the same &lt;font color="#FFA600">attributes&lt;/font>, but the values of these attributes differ from one object to another.
+This distinction between objects is a fundamental concept in object-oriented programming, where each object carries its own specific data while sharing the same structure and behavior as defined by the class. Understanding how &lt;font color="#FFA600">attributes&lt;/font> work helps in managing and manipulating objects effectively within a program.&lt;/p></description></item><item><title>Third Javascript exercise</title><link>https://poo-un.github.io/methodologies/javascript-practice/thirdjs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/javascript-practice/thirdjs/</guid><description/></item><item><title>Third Python exercise</title><link>https://poo-un.github.io/methodologies/python-practice/thirdpython/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/python-practice/thirdpython/</guid><description/></item><item><title>Inheritance concept</title><link>https://poo-un.github.io/docs/core-principles/inheritance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/core-principles/inheritance/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#FF6347">Inheritance&lt;/font> is a fundamental principle of object-oriented programming (OOP) that allows a class (called a child or subclass) to inherit properties and behaviors from another class (called a parent or superclass). This enables code reusability, as common &lt;font color="#FFA600">attributes&lt;/font> and &lt;font color="#F2613F">methods&lt;/font> can be defined in the parent class and inherited by its subclasses.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#FF6347">Inheritance&lt;/font> promotes the reusability of code by allowing &lt;font color="#007bff">classes&lt;/font> to derive common characteristics from a base class. It enables the creation of hierarchical relationships between &lt;font color="#007bff">classes&lt;/font>, where a child class can inherit and extend the functionality of its parent class. Subclasses can override or extend inherited methods, adding flexibility and specificity.&lt;/p>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>To illustrate &lt;font color="#FF6347">Inheritance&lt;/font>, let’s extend our &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class to create specialized types of accounts. For instance, we can create a &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> class that &lt;font color="#FF6347">inherits&lt;/font> from &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> and adds a specific interest rate.&lt;/p>
+&lt;pre class="mermaid hx-mt-6">classDiagram
+class BankAccount {
+- Int accountNumber
+- Int balance
+- String accountHolder
++ deposit(amount)
++ withdraw(amount)
++ getBalance()
+}
+class SavingsAccount {
+- Float interestRate
++ applyInterest()
+}
+BankAccount &lt;|-- SavingsAccount&lt;/pre>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> provides shared &lt;font color="#FFA600">attributes&lt;/font> like &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font>, along with shared &lt;font color="#F2613F">methods&lt;/font> like &lt;font color="#F2613F">&lt;code>deposit()&lt;/code>&lt;/font>, &lt;font color="#F2613F">&lt;code>withdraw()&lt;/code>&lt;/font>, and &lt;font color="#F2613F">&lt;code>getBalance()&lt;/code>&lt;/font>.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> inherits all the properties and behaviors of &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> but adds its own &lt;font color="#FFA600">&lt;code>interestRate&lt;/code>&lt;/font>🔒 attribute and the &lt;font color="#F2613F">&lt;code>applyInterest()&lt;/code>&lt;/font>🔓 method.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>This example illustrates how &lt;font color="#FF6347">Inheritance&lt;/font> allows new &lt;font color="#007bff">classes&lt;/font> to build on top of existing ones. The &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> class can leverage all the functionality of &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> while introducing its own features like calculating interest. By sharing common code between the parent and child classes, inheritance reduces redundancy and promotes a cleaner design.&lt;/p>
+&lt;h4>Why Inheritance Matters?&lt;span class="hx-absolute -hx-mt-20" id="why-inheritance-matters">&lt;/span>
+&lt;a href="#why-inheritance-matters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;h5>Code Reusability&lt;span class="hx-absolute -hx-mt-20" id="code-reusability">&lt;/span>
+&lt;a href="#code-reusability" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#FF6347">Inheritance&lt;/font> helps avoid duplication by allowing multiple subclasses to inherit common functionality from a single parent class. This way, shared &lt;font color="#FFA600">attributes&lt;/font> and &lt;font color="#F2613F">methods&lt;/font> can be reused without having to rewrite them in each subclass.&lt;/p>
+&lt;h5>Extensibility&lt;span class="hx-absolute -hx-mt-20" id="extensibility">&lt;/span>
+&lt;a href="#extensibility" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#FF6347">Inheritance&lt;/font> makes it easy to extend functionality. You can create new &lt;font color="#007bff">classes&lt;/font> based on existing ones, introducing specialized behaviors while maintaining the foundational code from the parent class.&lt;/p>
+&lt;h5>Maintainability&lt;span class="hx-absolute -hx-mt-20" id="maintainability">&lt;/span>
+&lt;a href="#maintainability" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>By organizing code into parent-child class relationships, &lt;font color="#FF6347">Inheritance&lt;/font> simplifies maintenance. Changes in the parent class automatically propagate to all subclasses, ensuring consistency across your application.&lt;/p>
+&lt;h5>Hierarchical Organization&lt;span class="hx-absolute -hx-mt-20" id="hierarchical-organization">&lt;/span>
+&lt;a href="#hierarchical-organization" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#FF6347">Inheritance&lt;/font> naturally supports the creation of a class hierarchy. This makes it easier to understand and structure complex systems, particularly when there are multiple related &lt;font color="#007bff">classes&lt;/font>.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;p>&lt;strong>Next Step:&lt;/strong>&lt;/p>
+&lt;p>Now that you’ve learned how &lt;font color="#FF6347">Inheritance&lt;/font> promotes code reusability and extensibility, the next step is to explore &lt;font color="#8A2BE2">Polymorphism&lt;/font>, which allows objects of different classes to be treated uniformly.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Fourth Javascript exercise</title><link>https://poo-un.github.io/methodologies/javascript-practice/fourthjs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/javascript-practice/fourthjs/</guid><description/></item><item><title>Fourth Python exercise</title><link>https://poo-un.github.io/methodologies/python-practice/fourthpython/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/python-practice/fourthpython/</guid><description/></item><item><title>Methods Concept</title><link>https://poo-un.github.io/docs/basic-concepts/methods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/basic-concepts/methods/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+In object-oriented programming, &lt;font color="#F2613F">methods&lt;/font> define the actions that an object can perform. They are functions within a class that describe the behaviors or operations of the objects created from the class.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>Methods are integral to how objects interact with each other and perform tasks. Let’s explore this concept using the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class example:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">BankAccount&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>For instance, let&amp;rsquo;s use the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class to create two bank account objects:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">account1&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">account2&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 123456 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 500 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: John Doe&lt;/td>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 789012 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 1000 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: Jane Smith&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>Method Usage:&lt;span class="hx-absolute -hx-mt-20" id="method-usage">&lt;/span>
+&lt;a href="#method-usage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
+&lt;li>&lt;font color="#007bff">&lt;code>account1&lt;/code>&lt;/font> can use the &lt;font color="#F2613F">&lt;code>deposit&lt;/code>&lt;/font> method to add funds and the &lt;font color="#F2613F">&lt;code>withdraw&lt;/code>&lt;/font> method to withdraw funds.&lt;/li>
+&lt;li>&lt;font color="#007bff">&lt;code>account2&lt;/code>&lt;/font> has the same methods but can perform &lt;font color="#F2613F">&lt;code>deposit&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw&lt;/code>&lt;/font> operations based on its own balance and account details.&lt;/li>
+&lt;/ul>
+&lt;p>Each object has access to the same &lt;font color="#F2613F">methods&lt;/font> defined in the class, which enables them to perform similar actions, but the outcomes of these methods depend on the object&amp;rsquo;s specific attributes and current state.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+Explore the &lt;strong>Core Principles&lt;/strong> chapter to learn more about how methods integrate with the core principles of OOP, including inheritance, polymorphism, abstraction, and encapsulation.
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Polymorphism concept</title><link>https://poo-un.github.io/docs/core-principles/polymorphism/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/core-principles/polymorphism/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;font color="#8A2BE2">Polymorphism&lt;/font> is a fundamental principle in OOP that allows objects of different classes to be treated as objects of a common base class. It enables one interface to be used for different data types or classes, simplifying code and making it more flexible.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#8A2BE2">Polymorphism&lt;/font> allows for methods to behave differently based on the object that invokes them. It enables multiple classes to implement methods that share the same name but provide different functionalities depending on the specific class.&lt;/p>
+&lt;p>For example, a banking system might have different types of accounts such as &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> and &lt;font color="#007bff">&lt;code>CheckingAccount&lt;/code>&lt;/font>. Both types of accounts could share a common method like &lt;font color="#F2613F">&lt;code>applyInterest()&lt;/code> &lt;/font>, but each would calculate interest in a different way.&lt;/p>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>Imagine we have a base class, &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>, and a subclass, &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font>. The method &lt;font color="#F2613F">&lt;code>applyInterest()&lt;/code>&lt;/font> behaves differently in the &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> class compared to a more generic method in &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>:&lt;/p>
+&lt;pre class="mermaid hx-mt-6">classDiagram
+class BankAccount {
++ deposit(amount)
++ withdraw(amount)
++ getBalance()
+}
+class SavingsAccount {
++ Float interestRate
++ applyInterest()
++ withdraw(amount)
+}
+BankAccount &lt;|-- SavingsAccount&lt;/pre>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;p>In the diagram:&lt;/p>
+&lt;p>The method &lt;font color="#F2613F">&lt;code>withdraw(amount)&lt;/code>&lt;/font> is &lt;font color="#8A2BE2">overridden&lt;/font> in the &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> class to account for savings-specific rules (like a fee or limit).
+Methods within the same class that share the same name but have different parameters.&lt;/p>
+&lt;p>The method &lt;font color="#F2613F">&lt;code>applyInterest()&lt;/code>&lt;/font> adds behavior specific to savings accounts, demonstrating &lt;font color="#8A2BE2">method overloading&lt;/font> because a subclass is providing specific implementation of a method already defined in its superclass.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#8A2BE2">Polymorphism&lt;/font> allows &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> and &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> to share similar methods, but execute them differently depending on the object’s type. For example, both classes have a &lt;font color="#F2613F">&lt;code>withdraw(amount)&lt;/code>&lt;/font> method, but the behavior differs depending on whether the object is a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> or a &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font>.&lt;/p>
+&lt;h4>Why Polymorphism Matters?&lt;span class="hx-absolute -hx-mt-20" id="why-polymorphism-matters">&lt;/span>
+&lt;a href="#why-polymorphism-matters" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;h5>Code Reusability&lt;span class="hx-absolute -hx-mt-20" id="code-reusability">&lt;/span>
+&lt;a href="#code-reusability" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#8A2BE2">Polymorphism&lt;/font> allows a base class like &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> to define general behavior, while subclasses like &lt;font color="#007bff">&lt;code>SavingsAccount&lt;/code>&lt;/font> can build on and modify that behavior. This makes it easier to extend the system without rewriting code.&lt;/p>
+&lt;h5>Maintainability&lt;span class="hx-absolute -hx-mt-20" id="maintainability">&lt;/span>
+&lt;a href="#maintainability" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>&lt;font color="#8A2BE2">Polymorphism&lt;/font> simplifies code maintenance. If you need to change the behavior of a method for a particular &lt;font color="#007bff">class&lt;/font>, you can override it in the subclass, without altering the base class or other subclasses.&lt;/p>
+&lt;h5>Dynamic Behavior&lt;span class="hx-absolute -hx-mt-20" id="dynamic-behavior">&lt;/span>
+&lt;a href="#dynamic-behavior" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>At runtime, the system can decide which &lt;font color="#F2613F">method&lt;/font> to invoke depending on the object&amp;rsquo;s type, leading to more flexible and dynamic code.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+&lt;p>&lt;strong>Next Step:&lt;/strong>&lt;/p>
+&lt;p>Now that you’ve mastered all four core principles of object-oriented programming (OOP), it’s time to explore the &lt;a href="https://poo-un.github.io/content/methodologies/_index.md" >Methodologies&lt;/a> section, where you can dive into different learning paths. These methodologies provide various ways to apply the OOP concepts you’ve learned based on different teaching styles and use cases.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h3>Quiz&lt;span class="hx-absolute -hx-mt-20" id="quiz">&lt;/span>
+&lt;a href="#quiz" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;hr>
+&lt;form id="quiz">
+&lt;label>Question 1: What is OOP?&lt;/label>&lt;br>
+&lt;input type="radio" name="q1" value="a"> A programming paradigm&lt;br>
+&lt;input type="radio" name="q1" value="b"> A database model&lt;br>
+&lt;input type="submit" value="Submit">
+&lt;/form>
+&lt;div id="result">&lt;/div>
+&lt;script>
+document.getElementById('quiz').onsubmit = function(e) {
+e.preventDefault();
+const answer = document.querySelector('input[name="q1"]:checked').value;
+document.getElementById('result').innerText = answer === 'a' ? 'Correct!' : 'Try again!';
+};
+&lt;/script></description></item><item><title>Fifth Javascript exercise</title><link>https://poo-un.github.io/methodologies/javascript-practice/fifthjs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/javascript-practice/fifthjs/</guid><description/></item><item><title>Fifth Python exercise</title><link>https://poo-un.github.io/methodologies/python-practice/fifthpython/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/python-practice/fifthpython/</guid><description/></item><item><title>Sixth Javascript exercise</title><link>https://poo-un.github.io/methodologies/javascript-practice/sixthjs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/javascript-practice/sixthjs/</guid><description/></item><item><title>Sixth Python exercise</title><link>https://poo-un.github.io/methodologies/python-practice/sixthpython/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/python-practice/sixthpython/</guid><description/></item><item><title>C++ contents</title><link>https://poo-un.github.io/methodologies/languages/cpp/more-contents/first/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/languages/cpp/more-contents/first/</guid><description/></item><item><title>Java contents</title><link>https://poo-un.github.io/methodologies/languages/java/more-contents/first/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/languages/java/more-contents/first/</guid><description/></item><item><title>Javascript contents</title><link>https://poo-un.github.io/methodologies/languages/javascript/more-contents/first/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/languages/javascript/more-contents/first/</guid><description/></item><item><title>Python contents</title><link>https://poo-un.github.io/methodologies/languages/python/more-contents/first/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/methodologies/languages/python/more-contents/first/</guid><description/></item></channel></rss>

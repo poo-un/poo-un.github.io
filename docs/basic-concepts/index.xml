@@ -1,0 +1,200 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Universidad Nacional de Colombia POO hub – Basic Concepts</title><link>https://poo-un.github.io/docs/basic-concepts/</link><description>Recent content in Basic Concepts on Universidad Nacional de Colombia POO hub</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://poo-un.github.io/docs/basic-concepts/index.xml" rel="self" type="application/rss+xml"/><item><title>Class concept</title><link>https://poo-un.github.io/docs/basic-concepts/class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/basic-concepts/class/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+A class is a user-defined data type. A class is a blueprint for creating objects that share common properties and behaviors.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>A &lt;font color="#007bff">class&lt;/font> can be thought of as a blueprint that defines the structure of objects in a program. It&amp;rsquo;s like a mold from which individual objects are created, each with its own attributes and behaviors.&lt;/p>
+&lt;p>Let&amp;rsquo;s consider the concept of a class using the example of a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>.&lt;/p>
+&lt;p>A &lt;font color="#007bff">class&lt;/font> is like a blueprint or template for creating objects. In our example, the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class represents the blueprint for creating individual bank account objects.&lt;/p>
+&lt;pre class="mermaid hx-mt-6">classDiagram
+class BankAccount {
+Int accountNumber
+Int Balance
+String accountHolder
+deposit(amount)
+withdraw(amount)
+} &lt;/pre>&lt;div style="display: flex; justify-content: center;">
+&lt;div class="mermaid">
+classDiagram
+class BankAccount {
+Int accountNumber
+Int Balance
+String accountHolder
+deposit(amount)
+withdraw(amount)
+}
+&lt;/div>
+&lt;/div>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">BankAccount&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber &lt;/font>: Int &lt;br/> &lt;font color="#FFA600">balance &lt;/font>: Int&lt;br/> &lt;font color="#FFA600">accountHolder &lt;/font> : String&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>Attributes:&lt;span class="hx-absolute -hx-mt-20" id="attributes">&lt;/span>
+&lt;a href="#attributes" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
+&lt;li>&lt;font color="#FFA600">Attributes&lt;/font> are characteristics or properties that describe the objects created from the class. For instance, in the case of a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>, attributes could include &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font>.&lt;/li>
+&lt;/ul>
+&lt;h4>Methods:&lt;span class="hx-absolute -hx-mt-20" id="methods">&lt;/span>
+&lt;a href="#methods" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
+&lt;li>&lt;font color="#F2613F">Methods&lt;/font> are functions that define the behavior of the objects created from the class. In the context of a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>, methods could include operations like &lt;font color="#F2613F">&lt;code>deposit&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw&lt;/code>&lt;/font>, which specify how money can be added to or withdrawn from an account.&lt;/li>
+&lt;/ul>
+&lt;p>This class blueprint defines the structure for creating &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> objects. Each object instantiated from this class inherits &lt;font color="#FFA600">attributes&lt;/font> such as &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font> and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font>. Additionally, the &lt;font color="#F2613F">methods&lt;/font> such as &lt;font color="#F2613F">&lt;code>deposit()&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw()&lt;/code>&lt;/font>, enable the objects to perform operations like adding or withdrawing money.&lt;/p></description></item><item><title>Object concept</title><link>https://poo-un.github.io/docs/basic-concepts/object/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/basic-concepts/object/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+In object-oriented programming (OOP), an &lt;font color="#0047ab">object&lt;/font> is an instance of a &lt;font color="#007bff">class&lt;/font>, encapsulating attributes and behaviors to model real-world entities.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>Remember that we have a class called &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font>. This class represents a bank account, and it has &lt;font color="#F2613F">methods&lt;/font> to perform banking operations like depositing money and withdrawing money.&lt;/p>
+&lt;p>In our example, an object is an instance of the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class. Each individual bank account created from the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class is an object.&lt;/p>
+&lt;p>These objects, such as &lt;font color="#007bff">&lt;code>account 1&lt;/code>&lt;/font> and &lt;font color="#007bff">&lt;code>account 2&lt;/code>&lt;/font>, inherit &lt;font color="#FFA600">attributes&lt;/font> and &lt;font color="#F2613F">methods&lt;/font> from the class, but hold their own unique data.&lt;/p>
+&lt;h4>Attributes:&lt;span class="hx-absolute -hx-mt-20" id="attributes">&lt;/span>
+&lt;a href="#attributes" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
+&lt;li>Each bank account object has its own set of attributes that describe its specific state. For instance, each bank account object might have attributes like &lt;font color="#FFA600">&lt;code>accountNumber&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balance&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolder&lt;/code>&lt;/font>.&lt;/li>
+&lt;/ul>
+&lt;h4>Methods:&lt;span class="hx-absolute -hx-mt-20" id="methods">&lt;/span>
+&lt;a href="#methods" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
+&lt;li>Objects have access to the methods defined by their class. These methods define the behavior or actions that objects can perform. For example, each bank account object can use methods like &lt;font color="#F2613F">&lt;code>deposit&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw&lt;/code>&lt;/font> to manage its funds.&lt;/li>
+&lt;/ul>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>Suppose we create two bank account objects from the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">Account 1&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">Account 2&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 123456 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 500 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: John Doe&lt;/td>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 789012 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 1000 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: Jane Smith&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Each bank account object represents a distinct bank account with its own unique attributes and behaviors. For example, &lt;font color="#007bff">&lt;code>account 1&lt;/code>&lt;/font> and &lt;font color="#007bff">&lt;code>account 2&lt;/code>&lt;/font> have different &lt;font color="#FFA600">&lt;code>accountNumbers&lt;/code>&lt;/font>, &lt;font color="#FFA600">&lt;code>balances&lt;/code>&lt;/font>, and &lt;font color="#FFA600">&lt;code>accountHolders&lt;/code>&lt;/font>. They can each independently use the &lt;font color="#F2613F">&lt;code>deposit&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw&lt;/code>&lt;/font> methods to manage their funds.&lt;/p></description></item><item><title>Attributes concept</title><link>https://poo-un.github.io/docs/basic-concepts/attributes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/basic-concepts/attributes/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+In object-oriented programming (OOP), an &lt;font color="#FFA600">attribute&lt;/font> (also known as a property or field) is a characteristic or property of an object. It represents the data that an object holds and defines its state.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;font color="#FFA600">Attributes&lt;/font> are defined within a &lt;font color="#007bff">class&lt;/font>, and each object created from that class has its own unique values for those attributes. For example, in a &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class, attributes might include the &lt;font color="#FFA600">accountNumber&lt;/font>, &lt;font color="#FFA600">balance&lt;/font>, and &lt;font color="#FFA600">accountHolder&lt;/font>.&lt;/p>
+&lt;p>Let&amp;rsquo;s delve into the concept of attributes considering the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class. Each bank account object created from this class will have its own set of attributes:&lt;/p>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>Consider the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class. Each bank account object created from this class will have its own set of attributes:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">BankAccount&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: Int &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: Int &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: String&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Suppose we create two &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> objects:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">account1&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">account2&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 123456 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 500 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: John Doe&lt;/td>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 789012 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 1000 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: Jane Smith&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>In this example, we see that although both &lt;font color="#007bff">&lt;code>account1&lt;/code>&lt;/font> and &lt;font color="#007bff">&lt;code>account2&lt;/code>&lt;/font> are instances of the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class, each object has its own unique attribute values.&lt;/p>
+&lt;p>Each object of the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class shares the same &lt;font color="#FFA600">attributes&lt;/font>, but the values of these attributes differ from one object to another.
+This distinction between objects is a fundamental concept in object-oriented programming, where each object carries its own specific data while sharing the same structure and behavior as defined by the class. Understanding how &lt;font color="#FFA600">attributes&lt;/font> work helps in managing and manipulating objects effectively within a program.&lt;/p></description></item><item><title>Methods Concept</title><link>https://poo-un.github.io/docs/basic-concepts/methods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://poo-un.github.io/docs/basic-concepts/methods/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;div class="hx-select-none hx-text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+ℹ️
+&lt;/div>&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+In object-oriented programming, &lt;font color="#F2613F">methods&lt;/font> define the actions that an object can perform. They are functions within a class that describe the behaviors or operations of the objects created from the class.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>Methods are integral to how objects interact with each other and perform tasks. Let’s explore this concept using the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class example:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">BankAccount&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>Bank Account Example:&lt;span class="hx-absolute -hx-mt-20" id="bank-account-example">&lt;/span>
+&lt;a href="#bank-account-example" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>For instance, let&amp;rsquo;s use the &lt;font color="#007bff">&lt;code>BankAccount&lt;/code>&lt;/font> class to create two bank account objects:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">account1&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;th style="text-align: center">ㅤㅤㅤㅤㅤ&lt;font color="#007bff">account2&lt;/font>ㅤㅤㅤㅤㅤ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 123456 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 500 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: John Doe&lt;/td>
+&lt;td style="text-align: center">&lt;font color="#FFA600">accountNumber&lt;/font>: 789012 &lt;br/> &lt;font color="#FFA600">balance&lt;/font>: 1000 &lt;br/> &lt;font color="#FFA600">accountHolder&lt;/font>: Jane Smith&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;td style="text-align: center">&lt;font color="#F2613F">deposit&lt;/font>(amount) &lt;br/> &lt;font color="#F2613F">withdraw&lt;/font>(amount)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>Method Usage:&lt;span class="hx-absolute -hx-mt-20" id="method-usage">&lt;/span>
+&lt;a href="#method-usage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
+&lt;li>&lt;font color="#007bff">&lt;code>account1&lt;/code>&lt;/font> can use the &lt;font color="#F2613F">&lt;code>deposit&lt;/code>&lt;/font> method to add funds and the &lt;font color="#F2613F">&lt;code>withdraw&lt;/code>&lt;/font> method to withdraw funds.&lt;/li>
+&lt;li>&lt;font color="#007bff">&lt;code>account2&lt;/code>&lt;/font> has the same methods but can perform &lt;font color="#F2613F">&lt;code>deposit&lt;/code>&lt;/font> and &lt;font color="#F2613F">&lt;code>withdraw&lt;/code>&lt;/font> operations based on its own balance and account details.&lt;/li>
+&lt;/ul>
+&lt;p>Each object has access to the same &lt;font color="#F2613F">methods&lt;/font> defined in the class, which enables them to perform similar actions, but the outcomes of these methods depend on the object&amp;rsquo;s specific attributes and current state.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
+Explore the &lt;strong>Core Principles&lt;/strong> chapter to learn more about how methods integrate with the core principles of OOP, including inheritance, polymorphism, abstraction, and encapsulation.
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
